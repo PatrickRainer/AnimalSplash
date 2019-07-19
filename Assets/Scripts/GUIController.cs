@@ -9,11 +9,17 @@ public class GUIController : MonoBehaviour
     // Panel for the complete Game-Over-Menue
     public GameObject uiPanel;
 
+    // Highscore Menu Title
+    public Text HighscoreTitle;
+
     // Top Text-Object
     public Text text1;
 
     // Bottom Text-Object
     public Text text2;
+
+    // Current Score Text
+    public Text currentScoreText;
 
     // AudioClip for the new Highscore
     public AudioClip gameOverClip;
@@ -21,8 +27,8 @@ public class GUIController : MonoBehaviour
     // AudioClip for Highscore
     public AudioClip highscoreClip;
 
-    // Current Pointscount, which is not shown in Inspector
-    [HideInInspector] public int points = 0;
+    // Current Pointscount
+    public int CurrentPoints;
 
     // Highscore on game start
     int beginningHs;
@@ -43,23 +49,23 @@ public class GUIController : MonoBehaviour
     }
 
     // Show the Higscore
-    void ShowHighscore()
+    public void ShowHighscore()
     {
         // Is the new pointcount higher than die old one?
-        if (points>beginningHs)
+        if (CurrentPoints > beginningHs)
         {
             // Then write a new highscore.
-            PlayerPrefs.SetInt("Highscore", points);
+            PlayerPrefs.SetInt("Highscore", CurrentPoints);
 
             // Save PlayerPrefs
             PlayerPrefs.Save();
 
-            // Play the Highscore-Clip
+            // Play the Highscore-Clip TODO: Highscore sound clip
             AudioSource.PlayClipAtPoint(highscoreClip, transform.position);
 
-            // Set HIghscore-Text and Pointscount to the Textobjects
+            // Set Highscore-Text and Pointscount to the Textobjects
             text1.text = "New Highscore!";
-            text2.text = "Score: " + points.ToString();
+            text2.text = "Score: " + CurrentPoints.ToString();
         }
         else
         {
@@ -67,7 +73,7 @@ public class GUIController : MonoBehaviour
             AudioSource.PlayClipAtPoint(gameOverClip, transform.position);
 
             // Set the current Pointcount and the Highscore to the TextObjects
-            text1.text = "Score: " + points.ToString();
+            text1.text = "Score: " + CurrentPoints.ToString();
             text2.text = "Highscore: " + beginningHs.ToString();
         }
 
@@ -79,5 +85,10 @@ public class GUIController : MonoBehaviour
     public void LoadLevel(int index)
     {
         SceneManager.LoadScene(index);
+    }
+
+    public void OnGUI()
+    {
+        currentScoreText.text = "Score: "+CurrentPoints.ToString();
     }
 }

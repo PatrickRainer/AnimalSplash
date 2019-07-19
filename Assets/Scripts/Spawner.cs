@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Spawner : MonoBehaviour
 {
@@ -24,18 +22,21 @@ public class Spawner : MonoBehaviour
     // Playing height
     float height;
 
-    // Current Level
-    int levelCounter = 0;
+    // The GameController
+    GameObject gameController;
 
     private void Start()
     {
+        // Game Controller assign
+        gameController = GameObject.FindGameObjectWithTag("GameController");
+
         // Display width
         width = Screen.width;
         // Display height
         height = Screen.height;
 
         // Start the first Wave
-        StartSpawnInterval();
+        StartSpawnInterval();     
     }
 
     void Spawn()
@@ -51,26 +52,29 @@ public class Spawner : MonoBehaviour
     }
     private void StartSpawnInterval()
     {
-        // count Level upwards
-        levelCounter++;
-
         // Show Level-Text
-        levelText.text = "Level " + levelCounter.ToString();
+        levelText.text = "Level " + SceneManager.GetActiveScene().buildIndex.ToString();
 
-        // Start in 3 seconds and create ghosts with delay
-        InvokeRepeating("Spawn",3, currentSpawnDelay);
+        // Start in x seconds and create ghosts with delay
+        InvokeRepeating("Spawn",1, currentSpawnDelay);
+    
 
-        // Stopp the wave
-        Invoke("IntervalBreak", intervalLength);
+        // TODO: Stop the wave and End Level
+        Invoke("EndLevel", intervalLength);
+
     }
 
-    void IntervalBreak()
+    void EndLevel()
     {
-        // Cancel Spawn
-        CancelInvoke("Spawn");
+
+        // StopSpawning
+        StopSpawning();
+                     
+        // Show Highscore
+        gameController.GetComponent<GUIController>().ShowHighscore();
 
         // Start the next wave in 3 sec.
-        Invoke("StartSpawnInterval", 3);
+        //Invoke("StartSpawnInterval", 3);
 
         // if the delay is bigger than 0.2 sec
         if (currentSpawnDelay>0.2F)
@@ -78,11 +82,36 @@ public class Spawner : MonoBehaviour
             // then reduce the Delay for 0.05 sec
             currentSpawnDelay -= 0.05F;
         }
+
+        // TODO: Stop all Animals on Screen
+        StopGame();
     }
 
     void StopSpawning()
     {
         // Cancel all Mehtods which has been started by invoke
         CancelInvoke();
+    }
+
+    // Stopp the Game
+    void StopGame()
+    {
+        // Stopp spawning
+        gameController.SendMessage("StopSpawning");
+
+        // Show the GameOver-Menue
+        gameController.SendMessage("ShowHighscore");
+
+        // Stopp the Touch and Mouse input reading
+        gameController.SendMessage("StopInputChecking");
+
+        // Search for all Animals
+        GameObject[] animals = GameObject.FindGameObjectsWithTag("Enemy");
+
+        // Go trough every Ghost and stop them
+        foreach (GameObject current in animals)
+        {
+            current.SendMessage("StopMoving");
+        }
     }
 }

@@ -59,8 +59,7 @@ public class Killing : MonoBehaviour
             transform.position = pos;
 
             // Count Points
-            guicontroller.points++;
-            Debug.Log(guicontroller.points.ToString());
+            guicontroller.CurrentPoints++;
 
             // Yes, I am Dead to true
             isDead = true;
