@@ -19,7 +19,7 @@ public class InputController : MonoBehaviour
             }
         }
 
-        // Is no touch pressed, is the left Mouse Butten pressed?
+        // Is no touch pressed, is the left Mouse Button pressed?
         if (Input.GetMouseButtonDown(0))
         {
             //Check the Mouse Position
@@ -71,4 +71,5 @@ public class InputController : MonoBehaviour
     {
     doInputChecking = false;
     }
+
 }

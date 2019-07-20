@@ -10,11 +10,14 @@ public class Spawner : MonoBehaviour
     // Array for the ghosts
     public GameObject[] prefs;
 
-    // Time of a ghost-wave, or level
-    public float intervalLength = 10;
+    // Time of a animal-wave, or level
+    public float startIntervalLength = 10;
+
+    // CurrentInterval Length
+    public float currentIntervallLength;
 
     // Current creating-delay
-    float currentSpawnDelay = 1.0F;
+    public float currentSpawnDelay = 1.0F;
 
     // Playing width
     float width;
@@ -35,11 +38,13 @@ public class Spawner : MonoBehaviour
         // Display height
         height = Screen.height;
 
+        currentIntervallLength = startIntervalLength;
+
         // Start the first Wave
-        StartSpawnInterval();     
+        //StartSpawnInterval();     // Obsolete: Do it over the Gamecontroller
     }
 
-    void Spawn()
+    private void Spawn()
     {
         levelText.text = "";
         Vector3 pos = new Vector3();
@@ -49,8 +54,11 @@ public class Spawner : MonoBehaviour
         wp.z = 0;
 
         Instantiate(prefs[UnityEngine.Random.Range(0, prefs.Length)], wp, Quaternion.identity);
+        currentIntervallLength -= 1;
+        Debug.Log(currentIntervallLength);
     }
-    private void StartSpawnInterval()
+
+    public void StartSpawnInterval(float intervallLength)
     {
         // Show Level-Text
         levelText.text = "Level " + SceneManager.GetActiveScene().buildIndex.ToString();
@@ -60,13 +68,12 @@ public class Spawner : MonoBehaviour
     
 
         // TODO: Stop the wave and End Level
-        Invoke("EndLevel", intervalLength);
+        Invoke("EndLevel", intervallLength);
 
     }
 
-    void EndLevel()
+    public void EndLevel()
     {
-
         // StopSpawning
         StopSpawning();
                      
@@ -83,35 +90,40 @@ public class Spawner : MonoBehaviour
             currentSpawnDelay -= 0.05F;
         }
 
-        // TODO: Stop all Animals on Screen
-        StopGame();
+        // TODO: Stop all Animals on Screen, show menu and give a chooser what to
+        // ... do next. Next level, end game, etc.
+        PauseSpawning();
     }
 
-    void StopSpawning()
+    public void StopSpawning()
     {
-        // Cancel all Mehtods which has been started by invoke
+        // Cancel all Methods which has been started by invoke
         CancelInvoke();
     }
 
-    // Stopp the Game
-    void StopGame()
+    /// <summary>
+    /// Pauses the Game
+    /// </summary>
+    public void PauseSpawning()
     {
-        // Stopp spawning
-        gameController.SendMessage("StopSpawning");
+        // Cancel all Methods which has been started by invoke
+        CancelInvoke();
 
-        // Show the GameOver-Menue
-        gameController.SendMessage("ShowHighscore");
 
-        // Stopp the Touch and Mouse input reading
-        gameController.SendMessage("StopInputChecking");
+    }
 
+    public void PauseMovingAnimals()
+    {
         // Search for all Animals
         GameObject[] animals = GameObject.FindGameObjectsWithTag("Enemy");
 
-        // Go trough every Ghost and stop them
+        // Go trough every Animal and stop them
         foreach (GameObject current in animals)
         {
             current.SendMessage("StopMoving");
         }
     }
+
+    // TODO: Resume Spawning
+    
 }

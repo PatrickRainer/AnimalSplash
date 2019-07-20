@@ -71,4 +71,9 @@ public class AnimalBehaviour : MonoBehaviour
 
         }
     }
+
+    public void DestroyMe()
+    {
+        Destroy(this.gameObject, 1);
+    }
 }

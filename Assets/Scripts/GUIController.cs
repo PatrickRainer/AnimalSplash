@@ -81,6 +81,15 @@ public class GUIController : MonoBehaviour
         uiPanel.SetActive(true);
     }
 
+    /// <summary>
+    /// Hiding the Highscore Menu
+    /// </summary>
+    public void HideHighscore()
+    {
+        // Hide the Game-Over-Menue
+        uiPanel.SetActive(false);
+    }
+
     // Load a Level
     public void LoadLevel(int index)
     {

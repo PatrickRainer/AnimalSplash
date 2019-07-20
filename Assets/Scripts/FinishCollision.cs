@@ -16,7 +16,8 @@ public class FinishCollision : MonoBehaviour
             //... then count Point up
             gameController.GetComponent<GUIController>().CurrentPoints++;
 
-            // TODO: Destroy the GameObject of the animal with delay
+            // Destroy the GameObject of the animal with delay
+            animal.DestroyMe();
         }
     }
 
