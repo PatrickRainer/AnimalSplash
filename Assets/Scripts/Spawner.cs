@@ -79,9 +79,6 @@ public class Spawner : MonoBehaviour
         // Show Highscore
         gameController.GetComponent<GUIController>().ShowPauseMenu();
 
-        // Start the next wave in 3 sec.
-        //Invoke("StartSpawnInterval", 3);
-
         // if the delay is bigger than 0.2 sec
         if (currentSpawnDelay>0.2F)
         {

@@ -38,12 +38,15 @@ public class GUIController : MonoBehaviour
 
         // Variable with 0
         beginningHs = 0;
-
     }
 
-    // Show the Higscore
+    /// <summary>
+    /// Shows the PauseMenu
+    /// </summary>
     public void ShowPauseMenu()
     {
+        // TODO: is the Menu shown because of the level ends, the resume Button does not be able to click
+
         // Is the new pointcount higher than die old one?
         if (CurrentPoints > beginningHs)
         {
