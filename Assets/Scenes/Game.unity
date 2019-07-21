@@ -256,8 +256,10 @@ MonoBehaviour:
   gameOverClip: {fileID: 8300000, guid: 2bf6e2db2654c814595d747747455b3b, type: 3}
   highscoreClip: {fileID: 8300000, guid: e4ba56c7b8591164ea99045de816ccdf, type: 3}
   CurrentPoints: 0
+  beginningHs: 0
   mySpawner: {fileID: 0}
   TimerText: {fileID: 1894627591}
+  resumeButton: {fileID: 0}
 --- !u!4 &164052920
 Transform:
   m_ObjectHideFlags: 0

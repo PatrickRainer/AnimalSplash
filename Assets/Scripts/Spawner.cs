@@ -59,6 +59,13 @@ public class Spawner : MonoBehaviour
 
     public void StartSpawnInterval(float intervallLength)
     {
+        // if the delay is bigger than 0.2 sec
+        if (currentSpawnDelay > 0.2F)
+        {
+            // then reduce the Delay for 0.05 sec
+            currentSpawnDelay -= 0.05F;
+        }
+
         // Show Level-Text
         levelText.text = "Level " + SceneManager.GetActiveScene().buildIndex.ToString();
 
@@ -67,28 +74,8 @@ public class Spawner : MonoBehaviour
     
 
         // TODO: Stop the wave and End Level
-        Invoke("EndLevel", intervallLength);
+        Invoke("EndLevel", intervallLength); // TODO: is now in the Game Controller how to call it in Invoke?
 
-    }
-
-    public void EndLevel()
-    {
-        // StopSpawning
-        StopSpawning();
-                     
-        // Show Highscore
-        gameController.GetComponent<GUIController>().ShowPauseMenu();
-
-        // if the delay is bigger than 0.2 sec
-        if (currentSpawnDelay>0.2F)
-        {
-            // then reduce the Delay for 0.05 sec
-            currentSpawnDelay -= 0.05F;
-        }
-
-        // TODO: Stop all Animals on Screen, show menu and give a chooser what to
-        // ... do next. Next level, end game, etc.
-        PauseSpawning();
     }
 
     public void StopSpawning()

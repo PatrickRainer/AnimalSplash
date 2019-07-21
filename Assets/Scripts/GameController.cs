@@ -70,6 +70,18 @@ public class GameController : MonoBehaviour
         sceneStatus = SceneStatus.Playing;
     }
 
+    // TODO: Ends the current Level because Timer is out /// Still undone, current Work ///
+    public void EndLevel()
+    {
+        // Pause the Game
+        PauseGame();
+        // Show PauseMenu
+        myGui.ShowPauseMenu();
+        // Disable the resume Button
+        myGui.DisableResumeButton();
+
+    }
+
     /// <summary>
     /// Pauses the Game, and goes into the Pause Menu
     /// </summary>

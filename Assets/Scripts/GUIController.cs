@@ -28,6 +28,8 @@ public class GUIController : MonoBehaviour
     public Spawner mySpawner;
     // Timer Text
     public Text TimerText;
+    // The Resume Button
+    public Button resumeButton;
 
     private void Start()
     {
@@ -76,6 +78,11 @@ public class GUIController : MonoBehaviour
     {
         // Hide the Game-Over-Menue
         uiPanel.SetActive(false);
+    }
+
+    public void DisableResumeButton()
+    {
+        resumeButton.interactable = false;
     }
 
     public void OnGUI()
