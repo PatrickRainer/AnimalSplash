@@ -30,7 +30,10 @@ public class GameController : MonoBehaviour
         StartLevel(0);
     }
 
-    // TODO: Start Level
+    /// <summary>
+    /// Start Scene
+    /// </summary>
+    /// <param name="level">Build Index of the scene</param>
     public void StartLevel(int level)
     {
         // TODO: Issue: Goes into a loop?! Because its in the start Method of this
@@ -41,7 +44,10 @@ public class GameController : MonoBehaviour
         sceneStatus = SceneStatus.Playing;
     }
 
-    //TODO: Start Level with LevelName
+    /// <summary>
+    /// Start Scene
+    /// </summary>
+    /// <param name="levelName">Scene Name</param>
     public void StartLevel(string levelName)
     {
         // TODO: Issue: Goes into a loop?!
@@ -63,7 +69,9 @@ public class GameController : MonoBehaviour
         sceneStatus = SceneStatus.Playing;
     }
 
-    //TODO: Pause Game
+    /// <summary>
+    /// Pauses the Game, and goes into the Pause Menu
+    /// </summary>
     public void PauseGame()
     {
         // TempSave the TimeScale
@@ -79,7 +87,9 @@ public class GameController : MonoBehaviour
 
     }
 
-    //TODO: Resume Game, when in Pause Mode
+    /// <summary>
+    /// Resumes the Game usually from the Pause Menu
+    /// </summary>
     public void ResumeGame()
     {
         // Hides the Highscore Menu
