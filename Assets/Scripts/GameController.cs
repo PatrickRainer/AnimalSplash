@@ -111,6 +111,18 @@ public class GameController : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
     }
 
+    //TODO: SaveHighscore
+    public void SaveHighscore()
+    {
+
+    }
+
+    // TODO: LoadHighscore
+    public void LoadHighscore()
+    {
+
+    }
+
     //TODO: SavePlayerInfo
     public void SavePlayerInfo()
     {
@@ -123,15 +135,22 @@ public class GameController : MonoBehaviour
 
     }
 
-    //TODO: SaveHighscore
-    public void SaveHighscore()
+    // TODO: NewPlayer
+    public void NewPlayer()
     {
 
     }
 
-    // TODO: LoadHighscore
-    public void LoadHighscore()
+    // TODO: DeletePlayer
+    public void DeletePlayer()
     {
 
     }
+
+    // TODO: ShowPlayerStats
+    public void ShowPlayerStats()
+    {
+
+    }
+
 }
