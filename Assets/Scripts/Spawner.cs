@@ -77,7 +77,7 @@ public class Spawner : MonoBehaviour
         StopSpawning();
                      
         // Show Highscore
-        gameController.GetComponent<GUIController>().ShowHighscore();
+        gameController.GetComponent<GUIController>().ShowPauseMenu();
 
         // Start the next wave in 3 sec.
         //Invoke("StartSpawnInterval", 3);

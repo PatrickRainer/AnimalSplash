@@ -25,6 +25,7 @@ public class GameController : MonoBehaviour
         inGameGui = GameObject.Find("InGameGui");
         mySpawner = GetComponent<Spawner>();
         myGui = GetComponent<GUIController>();
+        LoadHighscore(); // TODO: Take these Variables out from the GUIController class in to to stats or a sub Class of this
 
         // TODO: Check which scene schould be loaded.
         StartLevel(0);
@@ -79,12 +80,13 @@ public class GameController : MonoBehaviour
         // Set Time Scale to 0
         Time.timeScale = 0;
         // Show the GameMenu
-        gameController.SendMessage("ShowHighscore");
+        gameController.SendMessage("ShowPauseMenu");
         // Stopp the Touch and Mouse input reading
         gameController.SendMessage("StopInputChecking");
         // Set Scene-Status
         sceneStatus = SceneStatus.Paused;
-
+        // Save Highscore if new is made
+        SaveHighscore();
     }
 
     /// <summary>
@@ -93,7 +95,7 @@ public class GameController : MonoBehaviour
     public void ResumeGame()
     {
         // Hides the Highscore Menu
-        myGui.HideHighscore();
+        myGui.HidePauseMenu();
         // Reloads the  temporary Saved TimeScale
         Time.timeScale = tempTimeScale;
         // Resumes the Touch and Mouse input reading
@@ -111,16 +113,31 @@ public class GameController : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
     }
 
-    //TODO: SaveHighscore
+    /// <summary>
+    /// Saves the Highscore if there is a new one made
+    /// </summary>
     public void SaveHighscore()
     {
+        if (myGui.CurrentPoints > myGui.beginningHs)
+        {
+            // Then write a new highscore.
+            PlayerPrefs.SetInt("Highscore", myGui.CurrentPoints);
 
+            // Save PlayerPrefs
+            PlayerPrefs.Save();
+        }
     }
 
-    // TODO: LoadHighscore
+    /// <summary>
+    /// Loads the Highscore from PlayerPrefs into the GuiController class
+    /// </summary>
     public void LoadHighscore()
     {
-
+        // Is there already a Highscore?
+        if (PlayerPrefs.HasKey("Highscore"))
+        {
+            myGui.beginningHs = PlayerPrefs.GetInt("Highscore");
+        }
     }
 
     //TODO: SavePlayerInfo
