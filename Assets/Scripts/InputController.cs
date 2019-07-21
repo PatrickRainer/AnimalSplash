@@ -66,10 +66,20 @@ public class InputController : MonoBehaviour
         }
     }
 
-    // End the analizing of Touch or Mouse inputs
+    /// <summary>
+    /// End the analizing of Touch or Mouse inputs
+    /// </summary>
     public void StopInputChecking()
     {
     doInputChecking = false;
+    }
+
+    /// <summary>
+    /// Resumes or starts the analizing of Touch or Mouse inputs
+    /// </summary>
+    public void ResumeInputChecking()
+    {
+        doInputChecking = true;
     }
 
 }

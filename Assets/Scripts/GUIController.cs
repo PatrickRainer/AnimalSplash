@@ -33,8 +33,16 @@ public class GUIController : MonoBehaviour
     // Highscore on game start
     int beginningHs;
 
+    // The Spawner
+    public Spawner mySpawner;
+
+    // Timer Text
+    public Text TimerText;
+
     private void Start()
     {
+        mySpawner = GetComponent<Spawner>();
+
         // Hide Game-Over-Menue
         uiPanel.SetActive(false);
 
@@ -99,5 +107,6 @@ public class GUIController : MonoBehaviour
     public void OnGUI()
     {
         currentScoreText.text = "Score: "+CurrentPoints.ToString();
+        TimerText.text = "Timer: "+mySpawner.currentIntervallLength.ToString();
     }
 }

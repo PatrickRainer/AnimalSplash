@@ -55,7 +55,6 @@ public class Spawner : MonoBehaviour
 
         Instantiate(prefs[UnityEngine.Random.Range(0, prefs.Length)], wp, Quaternion.identity);
         currentIntervallLength -= 1;
-        Debug.Log(currentIntervallLength);
     }
 
     public void StartSpawnInterval(float intervallLength)

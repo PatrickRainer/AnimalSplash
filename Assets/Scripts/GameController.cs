@@ -12,6 +12,8 @@ public class GameController : MonoBehaviour
     public enum SceneStatus { Playing, Paused }
     public SceneStatus sceneStatus;
     public GUIController myGui;
+    // To temporary save the TimeScale
+    private float tempTimeScale;
 
 
     private void Start()
@@ -56,6 +58,7 @@ public class GameController : MonoBehaviour
     {
         mySpawner.StopAllCoroutines();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = tempTimeScale;
         // Set Scene-Status
         sceneStatus = SceneStatus.Playing;
     }
@@ -63,10 +66,10 @@ public class GameController : MonoBehaviour
     //TODO: Pause Game
     public void PauseGame()
     {
-        // Pause Spawning
-        mySpawner.PauseSpawning();
-        // Stop current Animals
-        mySpawner.PauseMovingAnimals();
+        // TempSave the TimeScale
+        tempTimeScale = Time.timeScale;
+        // Set Time Scale to 0
+        Time.timeScale = 0;
         // Show the GameMenu
         gameController.SendMessage("ShowHighscore");
         // Stopp the Touch and Mouse input reading
@@ -79,12 +82,12 @@ public class GameController : MonoBehaviour
     //TODO: Resume Game, when in Pause Mode
     public void ResumeGame()
     {
-        if (sceneStatus==SceneStatus.Paused)
-        {
-            myGui.HideHighscore();
-            mySpawner.ResumeRespawnInterval // TODO needs to be written
-        }
-
+        // Hides the Highscore Menu
+        myGui.HideHighscore();
+        // Reloads the  temporary Saved TimeScale
+        Time.timeScale = tempTimeScale;
+        // Resumes the Touch and Mouse input reading
+        gameController.SendMessage("ResumeInputChecking");
         sceneStatus = SceneStatus.Playing;
     }
 
