@@ -74,7 +74,7 @@ public class Spawner : MonoBehaviour
     
 
         // TODO: Stop the wave and End Level
-        Invoke("EndLevel", intervallLength); // TODO: is now in the Game Controller how to call it in Invoke?
+        //gameController.Invoke("EndLevel", intervallLength); // TODO: is now in the Game Controller how to call it in Invoke?
 
     }
 

@@ -15,7 +15,6 @@ public class GameController : MonoBehaviour
     // To temporary save the TimeScale
     private float tempTimeScale;
 
-
     private void Start()
     {
         gameController = GameObject.FindGameObjectWithTag("GameController").
