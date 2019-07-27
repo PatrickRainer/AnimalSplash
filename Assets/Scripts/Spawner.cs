@@ -69,13 +69,11 @@ public class Spawner : MonoBehaviour
         // Show Level-Text
         levelText.text = "Level " + SceneManager.GetActiveScene().buildIndex.ToString();
 
-        // Start in x seconds and create ghosts with delay
+        // Start in x seconds and create animal with delay
         InvokeRepeating("Spawn",1, currentSpawnDelay);
-    
-
-        // TODO: Stop the wave and End Level
-        //gameController.Invoke("EndLevel", intervallLength); // TODO: is now in the Game Controller how to call it in Invoke?
-
+        
+        // Ends the Level by the Timer
+        GameController.Instance.Invoke("EndLevel", intervallLength);     
     }
 
     public void StopSpawning()

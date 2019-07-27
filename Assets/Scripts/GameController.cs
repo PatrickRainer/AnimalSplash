@@ -1,19 +1,33 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class GameController : MonoBehaviour
 {
+    #region SingletonPattern
+    private static GameController _instance;
+    public static GameController Instance { get { return _instance; } }
+
+    private void Awake()
+    {
+        _instance = this;
+    }
+    #endregion
 
     public GameController gameController;
     public Camera mainCam;
     public GameObject pauseMenu;
     public GameObject inGameGui;
     public Spawner mySpawner;
-    public enum SceneStatus { Playing, Paused }
+    public enum SceneStatus { Playing, Paused, Ended }
     public SceneStatus sceneStatus;
     public GUIController myGui;
     // To temporary save the TimeScale
     private float tempTimeScale;
+
+    #region Events
+
+    #endregion
 
     private void Start()
     {
@@ -69,7 +83,9 @@ public class GameController : MonoBehaviour
         sceneStatus = SceneStatus.Playing;
     }
 
-    // TODO: Ends the current Level because Timer is out /// Still undone, current Work ///
+    /// <summary>
+    /// Ends the Level
+    /// </summary>
     public void EndLevel()
     {
         // Pause the Game
@@ -78,7 +94,8 @@ public class GameController : MonoBehaviour
         myGui.ShowPauseMenu();
         // Disable the resume Button
         myGui.DisableResumeButton();
-
+        // Scene Status
+        sceneStatus = SceneStatus.Ended;
     }
 
     /// <summary>

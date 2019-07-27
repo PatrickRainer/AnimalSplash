@@ -40,6 +40,7 @@ public class GUIController : MonoBehaviour
 
         // Variable with 0
         beginningHs = 0;
+
     }
 
     /// <summary>
