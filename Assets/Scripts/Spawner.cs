@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System;
 
 public class Spawner : MonoBehaviour
 {
@@ -12,11 +11,14 @@ public class Spawner : MonoBehaviour
     // Array for the ghosts
     public GameObject[] prefs;
 
-    // Time of a ghost-wave, or level
-    public float intervalLength = 10;
+    // Time of a animal-wave, or level
+    public float startIntervalLength = 10;
+
+    // CurrentInterval Length
+    public float currentIntervallLength;
 
     // Current creating-delay
-    float currentSpawnDelay = 1.0F;
+    public float currentSpawnDelay = 1.0F;
 
     // Playing width
     float width;
@@ -24,21 +26,26 @@ public class Spawner : MonoBehaviour
     // Playing height
     float height;
 
-    // Current Level
-    int levelCounter = 0;
+    // The GameController
+    GameObject gameController;
 
     private void Start()
     {
+        // Game Controller assign
+        gameController = GameObject.FindGameObjectWithTag("GameController");
+
         // Display width
         width = Screen.width;
         // Display height
         height = Screen.height;
 
+        currentIntervallLength = startIntervalLength;
+
         // Start the first Wave
-        StartSpawnInterval();
+        //StartSpawnInterval();     // Obsolete: Do it over the Gamecontroller
     }
 
-    void Spawn()
+    private void Spawn()
     {
         levelText.text = "";
         Vector3 pos = new Vector3();
@@ -48,41 +55,55 @@ public class Spawner : MonoBehaviour
         wp.z = 0;
 
         Instantiate(prefs[UnityEngine.Random.Range(0, prefs.Length)], wp, Quaternion.identity);
-    }
-    private void StartSpawnInterval()
-    {
-        // count Level upwards
-        levelCounter++;
-
-        // Show Level-Text
-        levelText.text = "Level " + levelCounter.ToString();
-
-        // Start in 3 seconds and create ghosts with delay
-        InvokeRepeating("Spawn",3, currentSpawnDelay);
-
-        // Stopp the wave
-        Invoke("IntervalBreak", intervalLength);
+        currentIntervallLength -= 1;
     }
 
-    void IntervalBreak()
+    public void StartSpawnInterval(float intervallLength)
     {
-        // Cancel Spawn
-        CancelInvoke("Spawn");
-
-        // Start the next wave in 3 sec.
-        Invoke("StartSpawnInterval", 3);
-
         // if the delay is bigger than 0.2 sec
-        if (currentSpawnDelay>0.2F)
+        if (currentSpawnDelay > 0.2F)
         {
             // then reduce the Delay for 0.05 sec
             currentSpawnDelay -= 0.05F;
         }
+
+        // Show Level-Text
+        levelText.text = "Level " + SceneManager.GetActiveScene().buildIndex.ToString();
+
+        // Start in x seconds and create animal with delay
+        InvokeRepeating("Spawn",1, currentSpawnDelay);
+        
+        // Ends the Level by the Timer
+        GameController.Instance.Invoke("EndLevel", intervallLength);     
     }
 
-    void StopSpawning()
+    public void StopSpawning()
     {
-        // Cancel all Mehtods which has been started by invoke
+        // Cancel all Methods which has been started by invoke
         CancelInvoke();
     }
+
+    /// <summary>
+    /// Pauses the Game
+    /// </summary>
+    public void PauseSpawning()
+    {
+        // Cancel all Methods which has been started by invoke
+        CancelInvoke();
+    }
+
+    [Obsolete("Method is not in use anymore, instead we use TimeScale to Pause the Game, located in the GameController")]
+    public void PauseMovingAnimals()
+    {
+        // Search for all Animals
+        GameObject[] animals = GameObject.FindGameObjectsWithTag("Enemy");
+
+        // Go trough every Animal and stop them
+        foreach (GameObject current in animals)
+        {
+            current.SendMessage("StopMoving");
+        }
+    }
+
+    
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InputController : MonoBehaviour
 {
-    // Can I chek inputs?
+    // Can I check inputs?
     bool doInputChecking = true;
 
     private void Update()
@@ -19,7 +19,7 @@ public class InputController : MonoBehaviour
             }
         }
 
-        // Is no touch pressed, is the left Mouse Butten pressed?
+        // Is no touch pressed, is the left Mouse Button pressed?
         if (Input.GetMouseButtonDown(0))
         {
             //Check the Mouse Position
@@ -50,8 +50,14 @@ public class InputController : MonoBehaviour
                 // Is it an enemy?
                 if (otherCol.gameObject.CompareTag("Enemy"))
                 {
+                    /// Obsolete /// 
                     // ... then destroy it
-                    otherCol.transform.gameObject.SendMessage("KillMe", 0, SendMessageOptions.DontRequireReceiver);
+                    //otherCol.transform.gameObject.SendMessage("KillMe", 0, SendMessageOptions.DontRequireReceiver);
+                    /// End Obsolete ///
+
+                    // Make it Faster
+                    GameObject animal = otherCol.gameObject;
+                    animal.SendMessage("OnClicked", SendMessageOptions.DontRequireReceiver);
                 }
             }
 
@@ -60,9 +66,20 @@ public class InputController : MonoBehaviour
         }
     }
 
-// End the analizing of Touch or Mouse inputs
-public void StopInputChecking()
-{
-doInputChecking = false;
-}
+    /// <summary>
+    /// End the analizing of Touch or Mouse inputs
+    /// </summary>
+    public void StopInputChecking()
+    {
+    doInputChecking = false;
+    }
+
+    /// <summary>
+    /// Resumes or starts the analizing of Touch or Mouse inputs
+    /// </summary>
+    public void ResumeInputChecking()
+    {
+        doInputChecking = true;
+    }
+
 }

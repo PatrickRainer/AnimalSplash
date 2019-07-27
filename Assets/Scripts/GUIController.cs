@@ -8,76 +8,86 @@ public class GUIController : MonoBehaviour
 {
     // Panel for the complete Game-Over-Menue
     public GameObject uiPanel;
-
+    // Highscore Menu Title
+    public Text HighscoreTitle;
     // Top Text-Object
     public Text text1;
-
     // Bottom Text-Object
     public Text text2;
-
+    // Current Score Text
+    public Text currentScoreText;
     // AudioClip for the new Highscore
     public AudioClip gameOverClip;
-
     // AudioClip for Highscore
     public AudioClip highscoreClip;
-
-    // Current Pointscount, which is not shown in Inspector
-    [HideInInspector] public int points = 0;
-
+    // Current Pointscount
+    public int CurrentPoints;
     // Highscore on game start
-    int beginningHs;
+    public int beginningHs;
+    // The Spawner
+    public Spawner mySpawner;
+    // Timer Text
+    public Text TimerText;
+    // The Resume Button
+    public Button resumeButton;
 
     private void Start()
     {
+        mySpawner = GetComponent<Spawner>();
+
         // Hide Game-Over-Menue
         uiPanel.SetActive(false);
 
         // Variable with 0
         beginningHs = 0;
 
-        // Is there already a Highscore?
-        if (PlayerPrefs.HasKey("Highscore"))
-        {
-            beginningHs = PlayerPrefs.GetInt("Highscore");
-        }
     }
 
-    // Show the Higscore
-    void ShowHighscore()
+    /// <summary>
+    /// Shows the PauseMenu
+    /// </summary>
+    public void ShowPauseMenu()
     {
+        
         // Is the new pointcount higher than die old one?
-        if (points>beginningHs)
+        if (CurrentPoints > beginningHs)
         {
-            // Then write a new highscore.
-            PlayerPrefs.SetInt("Highscore", points);
-
-            // Save PlayerPrefs
-            PlayerPrefs.Save();
-
-            // Play the Highscore-Clip
+            // Play the Highscore-Clip TODO: Highscore sound clip
             AudioSource.PlayClipAtPoint(highscoreClip, transform.position);
 
-            // Set HIghscore-Text and Pointscount to the Textobjects
+            // Set Highscore-Text and Pointscount to the Textobjects
             text1.text = "New Highscore!";
-            text2.text = "Score: " + points.ToString();
+            text2.text = "Score: " + CurrentPoints.ToString();
         }
         else
         {
-            // If ther is no new Highscore, then play the GameOverClip
-            AudioSource.PlayClipAtPoint(gameOverClip, transform.position);
 
             // Set the current Pointcount and the Highscore to the TextObjects
-            text1.text = "Score: " + points.ToString();
+            text1.text = "Score: " + CurrentPoints.ToString();
             text2.text = "Highscore: " + beginningHs.ToString();
         }
 
-        // Show the Game-Over-Menue
+        // Show the Pause Menu
         uiPanel.SetActive(true);
     }
 
-    // Load a Level
-    public void LoadLevel(int index)
+    /// <summary>
+    /// Hiding the Highscore Menu
+    /// </summary>
+    public void HidePauseMenu()
     {
-        SceneManager.LoadScene(index);
+        // Hide the Game-Over-Menue
+        uiPanel.SetActive(false);
+    }
+
+    public void DisableResumeButton()
+    {
+        resumeButton.interactable = false;
+    }
+
+    public void OnGUI()
+    {
+        currentScoreText.text = "Score: "+CurrentPoints.ToString();
+        TimerText.text = "Timer: "+mySpawner.currentIntervallLength.ToString();
     }
 }

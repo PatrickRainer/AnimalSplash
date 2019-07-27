@@ -9,6 +9,9 @@ public class Moving : MonoBehaviour
     // Should I stop?
     bool stop = false;
 
+    // Am I clicked before reaching the finishCollider
+    public bool hasClicked = false;
+
     private void Update()
     {
         if (!stop)
