@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Spawner : MonoBehaviour
 {
@@ -89,10 +90,9 @@ public class Spawner : MonoBehaviour
     {
         // Cancel all Methods which has been started by invoke
         CancelInvoke();
-
-
     }
 
+    [Obsolete("Method is not in use anymore, instead we use TimeScale to Pause the Game, located in the GameController")]
     public void PauseMovingAnimals()
     {
         // Search for all Animals
@@ -105,6 +105,5 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    // TODO: Resume Spawning
     
 }

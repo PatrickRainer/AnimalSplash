@@ -48,8 +48,7 @@ public class GUIController : MonoBehaviour
     /// </summary>
     public void ShowPauseMenu()
     {
-        // TODO: is the Menu shown because of the level ends, the resume Button does not be able to click
-
+        
         // Is the new pointcount higher than die old one?
         if (CurrentPoints > beginningHs)
         {
