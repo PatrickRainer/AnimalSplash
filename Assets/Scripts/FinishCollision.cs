@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class FinishCollision : MonoBehaviour
 {
-    // GameController from the Scene
-    public GameObject gameController;
+    // Gui Controller
+    public GUIController myGuiController;
+
+    private void Start()
+    {
+        myGuiController = GameObject.Find("GuiController").GetComponent<GUIController>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,7 +19,7 @@ public class FinishCollision : MonoBehaviour
         if (collision.gameObject.tag=="Enemy" && animal.hasClicked)
         {
             //... then count Point up
-            gameController.GetComponent<GUIController>().CurrentPoints++;
+            myGuiController.GetComponent<GUIController>().CurrentPoints++;
 
             // Destroy the GameObject of the animal with delay
             animal.DestroyMe();
