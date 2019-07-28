@@ -40,8 +40,10 @@ public class GameController : MonoBehaviour
         myGui = GetComponent<GUIController>();
         LoadHighscore(); // TODO: Take these Variables out from the GUIController class in to to stats or a sub Class of this
 
-        // TODO: Check which scene schould be loaded.
-        StartLevel(0);
+        // Does prevent from 
+        //Screen.autorotateToPortraitUpsideDown = false;
+        //Screen.orientation = ScreenOrientation.Landscape;
+
     }
 
     /// <summary>
@@ -52,7 +54,7 @@ public class GameController : MonoBehaviour
     {
         // TODO: Issue: Goes into a loop?! Because its in the start Method of this
         // ... script and we are still in that level?
-        //SceneManager.LoadScene(level);
+        SceneManager.LoadScene(level);
         mySpawner.StartSpawnInterval(mySpawner.startIntervalLength);
         // Set Scene-Status
         sceneStatus = SceneStatus.Playing;
