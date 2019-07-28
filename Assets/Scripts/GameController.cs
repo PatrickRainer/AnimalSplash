@@ -138,7 +138,7 @@ public class GameController : MonoBehaviour
     {
         // TODO: Add WebPlayer, Android and Iphone Quit. Example is here: https://answers.unity.com/questions/161858/startstop-playmode-from-editor-script.html
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false;
+        UnityEditor.EditorApplication.isPlaying = false; // TODO: If Unity is in Editor mode
     }
 
     /// <summary>
