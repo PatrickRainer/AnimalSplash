@@ -14,16 +14,19 @@ public class GameController : MonoBehaviour
     }
     #endregion
 
-    public GameController gameController;
+    //public GameController gameController;
     public Camera mainCam;
     public GameObject pauseMenu;
-    public GameObject inGameGui;
+    public GameObject myGameOverlay;
     public Spawner mySpawner;
     public enum SceneStatus { Playing, Paused, Ended }
     public SceneStatus sceneStatus;
     public GUIController myGui;
+    public InputController myInputController;
+
     // To temporary save the TimeScale
     private float tempTimeScale;
+    
 
     #region Events
 
@@ -31,17 +34,21 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        gameController = GameObject.FindGameObjectWithTag("GameController").
-            GetComponent<GameController>();
         mainCam = Camera.main;
         pauseMenu = GameObject.Find("PauseMenu");
-        inGameGui = GameObject.Find("InGameGui");
+        myGameOverlay = GameObject.Find("GameOverlay");
         mySpawner = GetComponent<Spawner>();
-        myGui = GetComponent<GUIController>();
+        myGui = GameObject.Find("GuiController").GetComponent<GUIController>();
         LoadHighscore(); // TODO: Take these Variables out from the GUIController class in to to stats or a sub Class of this
+        myInputController = GetComponent<InputController>();
 
-        // TODO: Check which scene schould be loaded.
-        StartLevel(0);
+        // Does prevent from 
+        Screen.autorotateToPortraitUpsideDown = false;
+        Screen.orientation = ScreenOrientation.Landscape;
+
+        // Start the Level
+        StartLevel(1);  // TODO: The Level index must come from somewhere else
+
     }
 
     /// <summary>
@@ -52,7 +59,11 @@ public class GameController : MonoBehaviour
     {
         // TODO: Issue: Goes into a loop?! Because its in the start Method of this
         // ... script and we are still in that level?
-        //SceneManager.LoadScene(level);
+        if (SceneManager.GetActiveScene().buildIndex !=level)
+        {
+            SceneManager.LoadScene(level);
+        }
+        
         mySpawner.StartSpawnInterval(mySpawner.startIntervalLength);
         // Set Scene-Status
         sceneStatus = SceneStatus.Playing;
@@ -65,7 +76,10 @@ public class GameController : MonoBehaviour
     public void StartLevel(string levelName)
     {
         // TODO: Issue: Goes into a loop?!
-        //SceneManager.LoadScene(levelName);
+        if (SceneManager.GetActiveScene().name != levelName)
+        {
+            SceneManager.LoadScene(levelName);
+        }
         mySpawner.StartSpawnInterval(mySpawner.startIntervalLength);
         // Set Scene-Status
         sceneStatus = SceneStatus.Playing;
@@ -108,9 +122,9 @@ public class GameController : MonoBehaviour
         // Set Time Scale to 0
         Time.timeScale = 0;
         // Show the GameMenu
-        gameController.SendMessage("ShowPauseMenu");
+        myGui.ShowPauseMenu();  // TODO: Test
         // Stopp the Touch and Mouse input reading
-        gameController.SendMessage("StopInputChecking");
+        myInputController.StopInputChecking();
         // Set Scene-Status
         sceneStatus = SceneStatus.Paused;
         // Save Highscore if new is made
@@ -127,8 +141,8 @@ public class GameController : MonoBehaviour
         // Reloads the  temporary Saved TimeScale
         Time.timeScale = tempTimeScale;
         // Resumes the Touch and Mouse input reading
-        gameController.SendMessage("ResumeInputChecking");
-        sceneStatus = SceneStatus.Playing;
+        myInputController.ResumeInputChecking();
+         sceneStatus = SceneStatus.Playing;
     }
 
     /// <summary>

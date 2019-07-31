@@ -33,7 +33,7 @@ public class GUIController : MonoBehaviour
 
     private void Start()
     {
-        mySpawner = GetComponent<Spawner>();
+        mySpawner = GameObject.FindGameObjectWithTag("GameController").GetComponent<Spawner>();
 
         // Hide Game-Over-Menue
         uiPanel.SetActive(false);
