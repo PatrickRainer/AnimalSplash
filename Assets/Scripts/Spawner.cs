@@ -47,10 +47,10 @@ public class Spawner : MonoBehaviour
 
     private void Spawn()
     {
-        levelText.text = "";
+        levelText.text = ""; // TODO: Should be handled by gui controller
         Vector3 pos = new Vector3();
-        pos.x = UnityEngine.Random.Range(50, width - 50);
-        pos.y = height + 70;
+        pos.x = 0; 
+        pos.y = UnityEngine.Random.Range(50, height - 50);
         Vector3 wp = Camera.main.ScreenToWorldPoint(pos);
         wp.z = 0;
 
