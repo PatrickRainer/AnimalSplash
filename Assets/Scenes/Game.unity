@@ -231,7 +231,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &157225732
+--- !u!114 &164052919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164052918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8af5e006f0eb4e940b25637b42d67699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiPanel: {fileID: 262207584}
+  HighscoreTitle: {fileID: 978680250}
+  text1: {fileID: 630363894}
+  text2: {fileID: 1631767956}
+  currentScoreText: {fileID: 122655477}
+  gameOverClip: {fileID: 8300000, guid: 2bf6e2db2654c814595d747747455b3b, type: 3}
+  highscoreClip: {fileID: 8300000, guid: e4ba56c7b8591164ea99045de816ccdf, type: 3}
+  CurrentPoints: 0
+  beginningHs: 0
+  mySpawner: {fileID: 0}
+  TimerText: {fileID: 1894627591}
+  resumeButton: {fileID: 1087426213}
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1096,9 +1119,11 @@ RectTransform:
   m_Father: {fileID: 1400226844}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 41.1, y: -129}
+
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -259, y: 130}
+
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938670866
