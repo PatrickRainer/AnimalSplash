@@ -8,8 +8,6 @@ public class AnimalBehaviour : MonoBehaviour
     private bool stop = false;
     // Am I clicked before reaching the finishCollider
     public bool hasClicked = false;
-    // The Game Controller
-    GUIController guicontroller;
     // The own Animator
     Animator anim;
     // The own AudioSource
@@ -19,8 +17,6 @@ public class AnimalBehaviour : MonoBehaviour
     {
         // Get Animator to member
         anim = GetComponent<Animator>();
-        // Get the Gui Controller
-        guicontroller = GameObject.FindGameObjectWithTag("GameController").GetComponent<GUIController>();
         // Get the Audiosource
         audioSource = GetComponent<AudioSource>();
     }
@@ -31,7 +27,7 @@ public class AnimalBehaviour : MonoBehaviour
         {
             Vector3 vel = new Vector3();
             // Direction Vector to bottom
-            vel = Vector3.down * speed * Time.deltaTime;
+            vel = Vector3.right * speed * Time.deltaTime;
 
             //Move me
             transform.Translate(vel);
