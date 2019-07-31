@@ -10,6 +10,9 @@ public class FinishCollision : MonoBehaviour
     private void Start()
     {
         myGuiController = GameObject.Find("GuiController").GetComponent<GUIController>();
+
+        // Set up the position of the collider to the right end of the screen
+        transform.position = Camera.main.ViewportToWorldPoint(new Vector3(1, 0.5F));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
