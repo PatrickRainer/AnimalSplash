@@ -83,6 +83,12 @@ public class GUIController : MonoBehaviour
     public void DisableResumeButton()
     {
         resumeButton.interactable = false;
+        // Set the color of the text opacity to half    
+        Text txt = (Text)GameObject.Find("TxtResume").GetComponent<Text>();
+        Color clr = txt.color;
+        clr.a = 0.5f;
+        txt.color = clr;
+        // End Set Transparency
     }
 
     public void OnGUI()
