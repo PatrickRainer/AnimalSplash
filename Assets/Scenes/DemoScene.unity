@@ -237,6 +237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 256642125}
   - component: {fileID: 256642124}
+  - component: {fileID: 256642126}
   m_Layer: 0
   m_Name: floor
   m_TagString: Untagged
@@ -306,6 +307,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &256642126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256642123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d65f0fa7b70bb7e4295c17cb2e3961d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &262207584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2397,36 +2410,5 @@ PrefabInstance:
       propertyPath: levelText
       value: 
       objectReference: {fileID: 1006567972}
-    - target: {fileID: 6924440242720609153, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: uiPanel
-      value: 
-      objectReference: {fileID: 262207584}
-    - target: {fileID: 6924440242720609153, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: HighscoreTitle
-      value: 
-      objectReference: {fileID: 978680250}
-    - target: {fileID: 6924440242720609153, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: text1
-      value: 
-      objectReference: {fileID: 630363894}
-    - target: {fileID: 6924440242720609153, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: text2
-      value: 
-      objectReference: {fileID: 1631767956}
-    - target: {fileID: 6924440242720609153, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: currentScoreText
-      value: 
-      objectReference: {fileID: 122655477}
-    - target: {fileID: 6924440242720609153, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: TimerText
-      value: 
-      objectReference: {fileID: 1894627591}
-    m_RemovedComponents:
-    - {fileID: 6924440242720609153, guid: 5bf5bfcd6791a4945a3f64973090c739, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bf5bfcd6791a4945a3f64973090c739, type: 3}
