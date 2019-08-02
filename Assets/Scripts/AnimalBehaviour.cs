@@ -62,7 +62,7 @@ public class AnimalBehaviour : MonoBehaviour
             // Set new Postion, so that other objects lay over this
             transform.position = pos;
 
-            // Yes, I am Dead to true
+            // hasClicked to true
             hasClicked = true;
 
         }
