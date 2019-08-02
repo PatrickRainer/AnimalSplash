@@ -47,7 +47,7 @@ public class GameController : MonoBehaviour
         Screen.orientation = ScreenOrientation.Landscape;
 
         // Start the Level
-        StartLevel(1);  // TODO: The Level index must come from somewhere else
+        StartLevel(SceneManager.GetActiveScene().buildIndex);  // TODO: The Level index must come from somewhere else
 
     }
 
