@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 5986542505568957682}
   - component: {fileID: 5986542505568957683}
   - component: {fileID: 5986542505568957677}
-  - component: {fileID: 5986542505568957676}
   m_Layer: 0
   m_Name: AnimalContainer
   m_TagString: Enemy
@@ -192,22 +191,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.66
   hasClicked: 0
---- !u!95 &5986542505568957676
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5986542505568957678}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 78cd1496598e2524c921446048b9097a, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
