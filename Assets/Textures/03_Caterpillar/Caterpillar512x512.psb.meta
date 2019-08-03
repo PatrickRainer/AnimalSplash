@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3c4643c071361b6488c853ea8af01649
+guid: 90bbe7e1955dc964890648b83a967cde
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -86,7 +86,7 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   mosaicSpriteImportData: []
   rigSpriteImportData:
-  - name: CCI01082019.jpg
+  - name: "Eingef\xFCgte Ebene #1"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -94,10 +94,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
-      width: 247
-      height: 224
-    spriteID: 157516dc80f63364fa08b0a10f62297b
+      y: 962
+      width: 126
+      height: 53
+    spriteID: 088a9122a70afc849b793d5801a52ed3
     internalID: 0
     spriteBone: []
     spriteOutline: []
@@ -107,27 +107,85 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     parentGroupIndex: -1
-    uvTransform: {x: 1, y: -11}
+    uvTransform: {x: -296, y: 597}
+  - name: "Eingef\xFCgte Ebene"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 484
+      width: 481
+      height: 470
+    spriteID: a4a75880834e3564aa5b1e4fdc6c02f8
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -9, y: 466}
+  - name: Caterpillar_Original.png
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 484
+      height: 472
+    spriteID: 706430f3fb92f5c469b1a2c41c077b51
+    internalID: 0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -8, y: -13}
   platformSettings: []
   mosaicLayers: 1
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
-  importedTextureWidth: 256
-  importedTextureHeight: 256
-  documentSize: {x: 256, y: 256}
-  textureActualWidth: 256
-  textureActualHeight: 256
+  importedTextureWidth: 512
+  importedTextureHeight: 1024
+  documentSize: {x: 512, y: 512}
+  textureActualWidth: 512
+  textureActualHeight: 1024
   spritePackingTag: 
   resliceFromLayer: 0
   characterMode: 1
   mosaicPSDLayers: []
   rigPSDLayers:
-  - name: CCI01082019.jpg
-    spriteName: CCI01082019.jpg
+  - name: "Eingef\xFCgte Ebene #1"
+    spriteName: "Eingef\xFCgte Ebene #1"
     isGroup: 0
     parentIndex: -1
-    spriteID: 157516dc80f63364fa08b0a10f62297b
+    spriteID: 088a9122a70afc849b793d5801a52ed3
+    layerID: 785658667
+    mosaicPosition: {x: 4, y: 962}
+  - name: "Eingef\xFCgte Ebene"
+    spriteName: "Eingef\xFCgte Ebene"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: a4a75880834e3564aa5b1e4fdc6c02f8
+    layerID: -361234527
+    mosaicPosition: {x: 4, y: 484}
+  - name: Caterpillar_Original.png
+    spriteName: Caterpillar_Original.png
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 706430f3fb92f5c469b1a2c41c077b51
     layerID: 0
     mosaicPosition: {x: 4, y: 4}
   characterData:
@@ -136,5 +194,5 @@ ScriptedImporter:
     dimension: {x: 0, y: 0}
   boneGOs: []
   generateGOHierarchy: 0
-  textureAssetName: Turtle256x256
-  prefabAssetName: Turtle256x256_GO
+  textureAssetName: Caterpillar512x512
+  prefabAssetName: Caterpillar512x512_GO
