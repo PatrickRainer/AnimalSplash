@@ -56,7 +56,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c7c9edd3d3ade05499cc54aaeb7e0abd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d1b147d9ff0f40b448d7a7a1c3743c87, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -156,11 +156,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelText: {fileID: 0}
   prefs:
-  - {fileID: 5125928218431823614, guid: f91fd1977d9dce646b396a93f8fd8fd4, type: 3}
-  - {fileID: 5125928218431823614, guid: f91fd1977d9dce646b396a93f8fd8fd4, type: 3}
-  startIntervalLength: 10
+  - {fileID: 1055010555585010782, guid: eb8d89c88337ae64392f9090d3b59df0, type: 3}
+  startIntervalLength: 20
   currentIntervallLength: 10
-  currentSpawnDelay: 1
+  currentSpawnDelay: 2
 --- !u!114 &6924440242720609162
 MonoBehaviour:
   m_ObjectHideFlags: 0

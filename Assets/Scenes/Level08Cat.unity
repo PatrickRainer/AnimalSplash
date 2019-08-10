@@ -2407,40 +2407,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6924440242720609164, guid: 5bf5bfcd6791a4945a3f64973090c739,
         type: 3}
-      propertyPath: prefs.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6924440242720609164, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
       propertyPath: levelText
       value: 
       objectReference: {fileID: 1006567972}
-    - target: {fileID: 6924440242720609164, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: prefs.Array.data[0]
-      value: 
-      objectReference: {fileID: 1055010555585010782, guid: eb8d89c88337ae64392f9090d3b59df0,
-        type: 3}
-    - target: {fileID: 6924440242720609164, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: prefs.Array.data[1]
-      value: 
-      objectReference: {fileID: 2621583324179444380, guid: 822e9251e989d1848b1e17e4c071fe77,
-        type: 3}
-    - target: {fileID: 6924440242720609164, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: currentIntervallLength
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 6924440242720609164, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: currentSpawnDelay
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6924440242720609164, guid: 5bf5bfcd6791a4945a3f64973090c739,
-        type: 3}
-      propertyPath: startIntervalLength
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bf5bfcd6791a4945a3f64973090c739, type: 3}
