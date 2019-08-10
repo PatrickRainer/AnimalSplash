@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 9a108eaba152c4f438ad6861ddfb9f86
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 5560361562356715390
+    second: StorkSpritesheet_0
+  - first:
+      213: 515523117419713231
+    second: StorkSpritesheet_1
+  - first:
+      213: 3623941321443898312
+    second: StorkSpritesheet_2
+  - first:
+      213: 8192962980632989200
+    second: StorkSpritesheet_3
+  - first:
+      213: 393924588289735822
+    second: StorkSpritesheet_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,12 +55,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,9 +84,136 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: StorkSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 700
+        height: 453
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb826912f8debb14cbc14023a1ec2b49
+      internalID: 5560361562356715390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StorkSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 15
+        width: 731
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1665abd6ad324af468a984499d903545
+      internalID: 515523117419713231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StorkSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2417
+        y: 0
+        width: 738
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af75046d60ee4e4ebc56dfed3797ac8
+      internalID: 3623941321443898312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StorkSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 3628
+        y: 15
+        width: 742
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce823f24ffdb3394b9889f376e03cd00
+      internalID: 8192962980632989200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StorkSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 4839
+        y: 0
+        width: 733
+        height: 524
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4e4dc96c7a8e64583b81a4c3236315
+      internalID: 393924588289735822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
