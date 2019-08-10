@@ -1,7 +1,82 @@
 fileFormatVersion: 2
 guid: a9d5d97ccc3a0644e92eaf265eb80989
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3562400272148197330
+    second: Snail_200_0
+  - first:
+      213: -3661391868099700916
+    second: Snail_200_1
+  - first:
+      213: -6361260243978889484
+    second: Snail_200_2
+  - first:
+      213: 348524854878457757
+    second: Snail_200_3
+  - first:
+      213: -880792583266431657
+    second: Snail_200_4
+  - first:
+      213: 6541911147861000108
+    second: Snail_200_5
+  - first:
+      213: 742324347524186535
+    second: Snail_200_6
+  - first:
+      213: 1183293064402968957
+    second: Snail_200_7
+  - first:
+      213: 3523248645324085927
+    second: Snail_200_8
+  - first:
+      213: -6869875639575042814
+    second: Snail_200_9
+  - first:
+      213: -3500749173109305357
+    second: Snail_200_10
+  - first:
+      213: 8259223107954646457
+    second: Snail_200_11
+  - first:
+      213: 3251258919329870969
+    second: Snail_200_12
+  - first:
+      213: 8194425325565753105
+    second: Snail_200_13
+  - first:
+      213: 2084308713489411206
+    second: Snail_200_14
+  - first:
+      213: 4778925042935557154
+    second: Snail_200_15
+  - first:
+      213: 715612593421720870
+    second: Snail_200_16
+  - first:
+      213: -8210407706779307804
+    second: Snail_200_17
+  - first:
+      213: 7427917799438707723
+    second: Snail_200_18
+  - first:
+      213: 2741144848972278333
+    second: Snail_200_19
+  - first:
+      213: 4539628183769278439
+    second: Snail_200_20
+  - first:
+      213: 6164653954747464432
+    second: Snail_200_21
+  - first:
+      213: -5331405300321435374
+    second: Snail_200_22
+  - first:
+      213: 627480780131462124
+    second: Snail_200_23
+  - first:
+      213: -2249300639275763031
+    second: Snail_200_24
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +115,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +144,556 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Snail_200_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 825
+        width: 204
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a91f1cd986b587b46aaa3ab7d68673cc
+      internalID: 3562400272148197330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 626
+        width: 200
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98adf7f9d009d6341903f61449c704f3
+      internalID: -3661391868099700916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 629
+        width: 198
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639e0d7764af22a43a98ecf9cdcd2234
+      internalID: -6361260243978889484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_3
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 627
+        width: 196
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 533e3d1f2a27e07459c1cc616ff9bfd9
+      internalID: 348524854878457757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 427
+        width: 193
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 810c27f2b2525194090fb6bb9b4e9c2b
+      internalID: -880792583266431657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_5
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 427
+        width: 191
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d78eafbd8732f8541a4bd6cfbb66a9f7
+      internalID: 6541911147861000108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_6
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 427
+        width: 192
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e869dd474598a44983661f56146c3fe
+      internalID: 742324347524186535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_7
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 427
+        width: 192
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 793e3f78b38efea48b30206475cab5ca
+      internalID: 1183293064402968957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_8
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 429
+        width: 191
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420e171a63acf004eaad9fa81d71d616
+      internalID: 3523248645324085927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 227
+        width: 189
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4533a48974880544ac0128e1a300018
+      internalID: -6869875639575042814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_10
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 227
+        width: 190
+        height: 132
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03e7ddf61cb80f48b09a0236dd30af3
+      internalID: -3500749173109305357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_11
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 228
+        width: 189
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5facecb05f6bbd747a9bb55077997576
+      internalID: 8259223107954646457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_12
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 226
+        width: 188
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed0d212890f5834c855bd711e34194a
+      internalID: 3251258919329870969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_13
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 227
+        width: 191
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c019e01018cc0d0468edf6d4ffbe7e86
+      internalID: 8194425325565753105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 27
+        width: 193
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b763116286d64c248958a9ceed73c0a2
+      internalID: 2084308713489411206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_15
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 28
+        width: 195
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603d673b4a3958f4f986483e4c5c1da5
+      internalID: 4778925042935557154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_16
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 28
+        width: 197
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a443895a225f534593df4059ca6035f
+      internalID: 715612593421720870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_17
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 25
+        width: 198
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85a05148818ac44bbdd0bdf37afcaf8
+      internalID: -8210407706779307804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_18
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 835
+        width: 197
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96376e46cfdcc946b2259327575e8ff
+      internalID: 7427917799438707723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_19
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 825
+        width: 194
+        height: 149
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0136debcba8ab3546acd2f2a83adab1d
+      internalID: 2741144848972278333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_20
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 828
+        width: 201
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61403f453941994294a6ce875816ffd
+      internalID: 4539628183769278439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_21
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 827
+        width: 197
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3918ef2482a2a9341910a9459cf987f1
+      internalID: 6164653954747464432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 626
+        width: 201
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc55cb27fd8d40449465fd72ebd609c
+      internalID: -5331405300321435374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_23
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 631
+        width: 201
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d375eb8b3658c45945e437d3f75838
+      internalID: 627480780131462124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snail_200_24
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 26
+        width: 198
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b41a60f532f5a84aa334a839519750d
+      internalID: -2249300639275763031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
