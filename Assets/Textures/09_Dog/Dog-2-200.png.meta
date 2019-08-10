@@ -1,0 +1,712 @@
+fileFormatVersion: 2
+guid: 525c6d1e6a38cca4d8147891630d20f4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7882220714334293126
+    second: Dog-2-200_0
+  - first:
+      213: 8439030866674446151
+    second: Dog-2-200_1
+  - first:
+      213: 7933471992482663049
+    second: Dog-2-200_2
+  - first:
+      213: 1815832228642756355
+    second: Dog-2-200_3
+  - first:
+      213: -8352271996238436066
+    second: Dog-2-200_4
+  - first:
+      213: -8036689963296104635
+    second: Dog-2-200_5
+  - first:
+      213: 2182570427419662731
+    second: Dog-2-200_6
+  - first:
+      213: 8184430361504833420
+    second: Dog-2-200_7
+  - first:
+      213: 4875385594845847527
+    second: Dog-2-200_8
+  - first:
+      213: 2193102036795846238
+    second: Dog-2-200_9
+  - first:
+      213: 1934328733996626942
+    second: Dog-2-200_10
+  - first:
+      213: -4907164890817609281
+    second: Dog-2-200_11
+  - first:
+      213: -5971647001942411385
+    second: Dog-2-200_12
+  - first:
+      213: 8380273548098326754
+    second: Dog-2-200_13
+  - first:
+      213: -8831501627727440560
+    second: Dog-2-200_14
+  - first:
+      213: -2741288312774547889
+    second: Dog-2-200_15
+  - first:
+      213: -7160855908044615480
+    second: Dog-2-200_16
+  - first:
+      213: 7904088596714337366
+    second: Dog-2-200_17
+  - first:
+      213: -2108272860406600254
+    second: Dog-2-200_18
+  - first:
+      213: -4638729898830539204
+    second: Dog-2-200_19
+  - first:
+      213: -7738023539472370714
+    second: Dog-2-200_20
+  - first:
+      213: 5411318857546140230
+    second: Dog-2-200_21
+  - first:
+      213: -1142566709217723491
+    second: Dog-2-200_22
+  - first:
+      213: 3289617707856743612
+    second: Dog-2-200_23
+  - first:
+      213: 3383847305599738968
+    second: Dog-2-200_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dog-2-200_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 802
+        width: 197
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7e3bb86f5006946aff67719dc16056
+      internalID: 7882220714334293126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 805
+        width: 199
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c24f0fa2d18b1f4d831193e3fbe1673
+      internalID: 8439030866674446151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 808
+        width: 199
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd1683f8b41aa849a7b328dfb4814c7
+      internalID: 7933471992482663049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 809
+        width: 197
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0da27e76cb2f22408fa7f8c52e3db5f
+      internalID: 1815832228642756355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 809
+        width: 196
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad882a24c952a3b48803c819f965a884
+      internalID: -8352271996238436066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 607
+        width: 179
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f908b817d4ab6f44a2bea910ce8239d
+      internalID: -8036689963296104635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_6
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 604
+        width: 194
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa000be6a7db64f4ebc53aeabbc50ee9
+      internalID: 2182570427419662731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_7
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 602
+        width: 185
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee3f42f831f16f4a87504c07cf5f4b1
+      internalID: 8184430361504833420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_8
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 601
+        width: 184
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37b4cf528a686543a614d3b6680bc6a
+      internalID: 4875385594845847527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_9
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 601
+        width: 190
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f48864e5a53a246a91f0857aa63410
+      internalID: 2193102036795846238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_10
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 410
+        width: 172
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f832687e531e3e459841216faa91479
+      internalID: 1934328733996626942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_11
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 413
+        width: 174
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82746010bc729294fa8c59c71b4fcd7d
+      internalID: -4907164890817609281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_12
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 414
+        width: 185
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f416ad7e97936e0469bb5c65ba97ad9f
+      internalID: -5971647001942411385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_13
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 413
+        width: 175
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca18b8c5310f1d468380cd9a25ff7cb
+      internalID: 8380273548098326754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_14
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 410
+        width: 169
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3598a54976ceac4da64a4dd0e9ab290
+      internalID: -8831501627727440560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_15
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 201
+        width: 180
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9822b5ef892f0c4b9ac6a188501222a
+      internalID: -2741288312774547889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_16
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 201
+        width: 173
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcde32595dbcc9f4dafbf68b629074c6
+      internalID: -7160855908044615480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_17
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 202
+        width: 175
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb96d1cbaea0da46a5c35618c18a447
+      internalID: 7904088596714337366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_18
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 204
+        width: 187
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5539bddb9972f9e43b2f84d9839febf7
+      internalID: -2108272860406600254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_19
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 207
+        width: 175
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33c455baec3d1bd4caa544b693060108
+      internalID: -4638729898830539204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 196
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e2cc6b57ad30144800647391aa7ab6
+      internalID: -7738023539472370714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 9
+        width: 195
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04671e6f296b9da4f87cb67a7e0d18eb
+      internalID: 5411318857546140230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 8
+        width: 194
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab0e283c5da1a94dbb8b6063c3c1925
+      internalID: -1142566709217723491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_23
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 5
+        width: 191
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2509bcf5d36186543af4779708be6134
+      internalID: 3289617707856743612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dog-2-200_24
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 2
+        width: 187
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac890521f566aa4597b6f7586ee7289
+      internalID: 3383847305599738968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: fc26bad773f63c64ea67e493e93d1e47
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,712 @@
+fileFormatVersion: 2
+guid: 93448930bc626c748b13536d9590be47
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7338775253909731688
+    second: BlueBird_200_0
+  - first:
+      213: -7605258493679910051
+    second: BlueBird_200_1
+  - first:
+      213: 6797018676481600484
+    second: BlueBird_200_2
+  - first:
+      213: 3640518999483818522
+    second: BlueBird_200_3
+  - first:
+      213: 8608919045016493777
+    second: BlueBird_200_4
+  - first:
+      213: 7782170693359880857
+    second: BlueBird_200_5
+  - first:
+      213: -5686049024553360837
+    second: BlueBird_200_6
+  - first:
+      213: 7710622269368804605
+    second: BlueBird_200_7
+  - first:
+      213: 688665595940012916
+    second: BlueBird_200_8
+  - first:
+      213: 1956654840839759590
+    second: BlueBird_200_9
+  - first:
+      213: -3025287294104267400
+    second: BlueBird_200_10
+  - first:
+      213: -1587625732174897134
+    second: BlueBird_200_11
+  - first:
+      213: 5657652015411387837
+    second: BlueBird_200_12
+  - first:
+      213: -9082841051449524097
+    second: BlueBird_200_13
+  - first:
+      213: 2338884618219500570
+    second: BlueBird_200_14
+  - first:
+      213: 9100134592657429494
+    second: BlueBird_200_15
+  - first:
+      213: 2369282334992581544
+    second: BlueBird_200_16
+  - first:
+      213: 3943544193053987857
+    second: BlueBird_200_17
+  - first:
+      213: 4172805341584482538
+    second: BlueBird_200_18
+  - first:
+      213: -1601679522520063275
+    second: BlueBird_200_19
+  - first:
+      213: 7884087861406936420
+    second: BlueBird_200_20
+  - first:
+      213: -3745021124384001167
+    second: BlueBird_200_21
+  - first:
+      213: -2143034160885996439
+    second: BlueBird_200_22
+  - first:
+      213: -4457728897739848606
+    second: BlueBird_200_23
+  - first:
+      213: 556729664421911763
+    second: BlueBird_200_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlueBird_200_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 806
+        width: 176
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6691e1a33d85d498239a0363434e9c
+      internalID: 7338775253909731688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_1
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 805
+        width: 175
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ab491aca133d445913eb18733b1bc6
+      internalID: -7605258493679910051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_2
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 806
+        width: 175
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbb32f8b371ac54fafc4697a5b1efb6
+      internalID: 6797018676481600484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_3
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 810
+        width: 175
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b20b754926892e4f8e15f45f3fd1720
+      internalID: 3640518999483818522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_4
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 811
+        width: 174
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3322dd88fe7b7540a3186e02d001368
+      internalID: 8608919045016493777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_5
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 604
+        width: 174
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d26b11ac4f5351428f109d3faff6e3f
+      internalID: 7782170693359880857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_6
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 604
+        width: 173
+        height: 193
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9542085929ba7a489f6355ca33cc5e6
+      internalID: -5686049024553360837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_7
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 608
+        width: 171
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 366e545b9bb591e46a798a07c1d5b11e
+      internalID: 7710622269368804605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_8
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 612
+        width: 172
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0ca8eba9e8c91478619baa6a6d0665
+      internalID: 688665595940012916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_9
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 610
+        width: 173
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbdb258d164a7e4db7a2d089d5ecb85
+      internalID: 1956654840839759590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 403
+        width: 174
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0891f40639ea3c94db6c2455cc1e7c90
+      internalID: -3025287294104267400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_11
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 402
+        width: 173
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280d8cc65cf0fe04dbd60e03601ea9a6
+      internalID: -1587625732174897134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_12
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 401
+        width: 170
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a7aa9033fdb0a41b2a9a0f3f1589b4
+      internalID: 5657652015411387837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_13
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 400
+        width: 168
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a890e43cdc88d4344b52f39ae8a11774
+      internalID: -9082841051449524097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_14
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 402
+        width: 171
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f10408d374b85b43a208399ebd30ca3
+      internalID: 2338884618219500570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_15
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 200
+        width: 174
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3922d3c64731f7343ada9c99595da8f2
+      internalID: 9100134592657429494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_16
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 202
+        width: 175
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7ce8824bac27640b3cbcdc0cd01b6b
+      internalID: 2369282334992581544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_17
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 204
+        width: 174
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130314e1e3886294684ccaa4bd45d59f
+      internalID: 3943544193053987857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_18
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 204
+        width: 173
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7688d623133ddbb4d944c4ef7a6936c0
+      internalID: 4172805341584482538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_19
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 203
+        width: 173
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdf4500d7cbf284c8613c38a36baad1
+      internalID: -1601679522520063275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_20
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1
+        width: 174
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8553aecfd59be4cacbff2c017b1043
+      internalID: 7884087861406936420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_21
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 1
+        width: 173
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a19c6d5e727bbe48953a863e46757b6
+      internalID: -3745021124384001167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_22
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 0
+        width: 170
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d586a63dab0abd479d9a4808e054c62
+      internalID: -2143034160885996439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_23
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 0
+        width: 166
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78bb773a533bf848a3f3b60462dcb41
+      internalID: -4457728897739848606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlueBird_200_24
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 171
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a3a447cead166419f30175425ab3d0
+      internalID: 556729664421911763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 4236812718f83f246b1e06d413571720
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
