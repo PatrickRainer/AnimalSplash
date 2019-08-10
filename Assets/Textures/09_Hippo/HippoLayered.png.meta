@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,10 +116,10 @@ TextureImporter:
       name: HippoLayered_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1077
-        width: 1179
-        height: 895
+        x: 742
+        y: 598
+        width: 498
+        height: 441
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,7 +127,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc93ddb6d52c75a45b6046c06325f485
+      spriteID: 243d522bf4669e84887afae21de78c04
       internalID: -8540332819319736019
       vertices: []
       indices: 
@@ -137,10 +137,10 @@ TextureImporter:
       name: HippoLayered_1
       rect:
         serializedVersion: 2
-        x: 1283
-        y: 1012
-        width: 1024
-        height: 960
+        x: 1357
+        y: 590
+        width: 507
+        height: 450
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,7 +148,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d23512213cc8d0443b6027c08f1002ec
+      spriteID: 3016a6ecd6ab578458101c8a1d48747a
       internalID: -3630430164795758066
       vertices: []
       indices: 
@@ -158,10 +158,10 @@ TextureImporter:
       name: HippoLayered_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 36
-        width: 331
-        height: 693
+        x: 898
+        y: 187
+        width: 164
+        height: 345
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,7 +169,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c5cbdffbd4a5234389252ebaaa20df8
+      spriteID: 3240e345ebc83c54d92b3d272c2b7ef1
       internalID: -5719356447785171587
       vertices: []
       indices: 
@@ -179,10 +179,10 @@ TextureImporter:
       name: HippoLayered_3
       rect:
         serializedVersion: 2
-        x: 257
-        y: 555
-        width: 272
-        height: 349
+        x: 1175
+        y: 198
+        width: 134
+        height: 173
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,7 +190,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4ba399c93270b054394480506c70ad7f
+      spriteID: c296ac7e2d147fa438473236e306509f
       internalID: 4385744684468469320
       vertices: []
       indices: 
@@ -200,10 +200,10 @@ TextureImporter:
       name: HippoLayered_4
       rect:
         serializedVersion: 2
-        x: 1089
-        y: 542
-        width: 252
-        height: 391
+        x: 1429
+        y: 195
+        width: 142
+        height: 199
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,7 +211,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f3deb5caaf9f474995cefc6b46091cb
+      spriteID: 9457667a8c484e24b81c00a13c36b92f
       internalID: 1703344629661190858
       vertices: []
       indices: 
@@ -221,10 +221,10 @@ TextureImporter:
       name: HippoLayered_5
       rect:
         serializedVersion: 2
-        x: 995
-        y: 0
-        width: 336
-        height: 399
+        x: 1676
+        y: 203
+        width: 125
+        height: 194
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,7 +232,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab91f0be23dd73a4e865afc318316f57
+      spriteID: 03f8d64092deb6a48a6d77baa6577df7
       internalID: 3673747138193815330
       vertices: []
       indices: 
@@ -241,7 +241,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ff44562536bdd6e4e9f51428201186f8
+    spriteID: d1b706b3dd41ec9429bc2496094cd165
     internalID: 0
     vertices: []
     indices: 

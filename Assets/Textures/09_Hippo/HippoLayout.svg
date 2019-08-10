@@ -16,7 +16,7 @@
    version="1.1"
    id="SVGRoot"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="HippoColored.svg">
+   sodipodi:docname="HippoLayout.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,10 +25,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="333.97845"
-     inkscape:cy="913.55387"
+     inkscape:cx="733.36404"
+     inkscape:cy="570.0276"
      inkscape:document-units="px"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer7"
      showgrid="false"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
@@ -399,7 +399,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -425,7 +425,7 @@
      style="display:inline">
     <g
        id="g7909"
-       transform="matrix(0.82196546,0,0,0.82196546,-401.64984,-102.18042)"
+       transform="matrix(0.82196546,0,0,0.82196546,317.13615,229.75058)"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300">
       <path
@@ -451,7 +451,7 @@
      style="display:inline">
     <g
        id="g7905"
-       transform="matrix(0.82196546,0,0,0.82196546,-401.64984,-102.18042)"
+       transform="matrix(0.82196546,0,0,0.82196546,-104.33706,145.39657)"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300">
       <path
@@ -485,7 +485,7 @@
      style="display:inline">
     <g
        id="g7900"
-       transform="matrix(0.82196546,0,0,0.82196546,-401.64984,-102.18042)"
+       transform="matrix(0.82196546,0,0,0.82196546,236.70757,230.50708)"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300">
       <path
@@ -503,7 +503,7 @@
      style="display:inline">
     <g
        id="g7897"
-       transform="matrix(0.82196546,0,0,0.82196546,-401.64984,-102.18042)"
+       transform="matrix(0.82196546,0,0,0.82196546,100.53817,275.62278)"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300">
       <path
@@ -537,7 +537,7 @@
      style="display:inline">
     <g
        id="g7892"
-       transform="matrix(0.82196546,0,0,0.82196546,-401.64984,-102.18042)"
+       transform="matrix(0.82196546,0,0,0.82196546,129.16535,217.38274)"
        inkscape:export-xdpi="300"
        inkscape:export-ydpi="300">
       <path
@@ -572,7 +572,8 @@
     <g
        id="g9235"
        inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300">
+       inkscape:export-ydpi="300"
+       transform="translate(779.26943,294.15629)">
       <path
          sodipodi:nodetypes="sssssssssssssssssssss"
          inkscape:connector-curvature="0"
