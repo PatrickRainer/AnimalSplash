@@ -7,8 +7,8 @@ public class MainMenu : MonoBehaviour
     void Awake()
     {
         // Prevent from going to Portrait mode
-        Screen.autorotateToPortrait = true;
-        Screen.orientation = ScreenOrientation.Portrait;
+        Screen.autorotateToLandscapeRight = true;
+        Screen.orientation = ScreenOrientation.Landscape;
     }
 
     // Update is called once per frame
