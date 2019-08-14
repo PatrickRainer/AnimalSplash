@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Finish Collision, is obsolete we will not use it anymore!
+/// </summary>
 public class FinishCollision : MonoBehaviour
 {
     // Gui Controller
@@ -21,8 +24,8 @@ public class FinishCollision : MonoBehaviour
         // Is an enemy walked into my trigger and was clicked on his way down?
         if (collision.gameObject.tag=="Enemy" && animal.hasClicked)
         {
-            //... then count Point up
-            myGuiController.GetComponent<GUIController>().CurrentPoints++;
+            //... then count Point up // Obsolete we do it in the onClicked of AnimalBeahaviour
+            //myGuiController.GetComponent<GUIController>().CurrentPoints++;
 
             // Destroy the GameObject of the animal with delay
             animal.DestroyMe();

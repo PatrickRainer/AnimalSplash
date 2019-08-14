@@ -65,6 +65,10 @@ public class AnimalBehaviour : MonoBehaviour
             // hasClicked to true
             hasClicked = true;
 
+            //Count Points
+            GameObject myGUI = GameObject.Find("GuiController");
+            myGUI.GetComponent<GUIController>().CurrentPoints++;
+
         }
     }
 
