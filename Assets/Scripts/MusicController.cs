@@ -31,7 +31,9 @@ public class MusicController : MonoBehaviour
         PlayAllTracksInLoop();
         LoadVolumeFromPrefs();
     }
+    #endregion
 
+    #region Methods
     private void Update()
     {
         if (!myAudiosource.isPlaying)
@@ -61,7 +63,7 @@ public class MusicController : MonoBehaviour
         }
         
     }
-    #endregion
+
 
     private void PlayTrack(int trackNumber)
     {
@@ -89,5 +91,5 @@ public class MusicController : MonoBehaviour
     {
         PlayerPrefs.SetFloat("MusicVolume", Volume);
     }
-
+    #endregion
 }
