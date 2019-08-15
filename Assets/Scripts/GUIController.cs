@@ -94,6 +94,6 @@ public class GUIController : MonoBehaviour
     public void OnGUI()
     {
         currentScoreText.text = "Score: "+CurrentPoints.ToString();
-        TimerText.text = "Timer: "+mySpawner.currentIntervallLength.ToString();
+        TimerText.text = "Timer: "+((int)mySpawner.currentIntervallLength).ToString();
     }
 }
