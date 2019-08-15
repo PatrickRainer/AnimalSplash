@@ -29,6 +29,10 @@ public class Spawner : MonoBehaviour
     // The GameController
     GameObject gameController;
 
+    // A Timer for GUItext
+    private float remTime;
+    public new Text guiText;
+
     private void Start()
     {
         // Game Controller assign
@@ -45,6 +49,18 @@ public class Spawner : MonoBehaviour
         //StartSpawnInterval();     // Obsolete: Do it over the Gamecontroller
     }
 
+    private void Update()
+    {
+        //Timer
+        if (remTime>=0)
+        {
+            // only count while remTime is not finished
+            remTime -= Time.deltaTime;
+            currentIntervallLength = remTime;
+        }
+        
+    }
+
     private void Spawn()
     {
         levelText.text = ""; // TODO: Should be handled by gui controller
@@ -55,7 +71,6 @@ public class Spawner : MonoBehaviour
         wp.z = 0;
 
         Instantiate(prefs[UnityEngine.Random.Range(0, prefs.Length)], wp, Quaternion.identity);
-        currentIntervallLength -= 1;
     }
 
     public void StartSpawnInterval(float intervallLength)
@@ -72,9 +87,11 @@ public class Spawner : MonoBehaviour
 
         // Start in x seconds and create animal with delay
         InvokeRepeating("Spawn",1, currentSpawnDelay);
-        
+
         // Ends the Level by the Timer
-        GameController.Instance.Invoke("EndLevel", intervallLength);     
+        GameController.Instance.Invoke("EndLevel", startIntervalLength);
+        // Set the Timer to the Invoke Time
+        remTime = startIntervalLength;
     }
 
     public void StopSpawning()
