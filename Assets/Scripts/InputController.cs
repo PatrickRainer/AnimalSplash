@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// The Input Controller listens to the Mouse or Touch input from your device
+/// </summary>
 public class InputController : MonoBehaviour
 {
     // Can I check inputs?
-    bool doInputChecking = true;
+    private bool doInputChecking = true;
 
     private void Update()
     {
@@ -29,7 +32,7 @@ public class InputController : MonoBehaviour
     }
 
     // Check Input Position
-    void CheckInput(Vector3 pos)
+    private void CheckInput(Vector3 pos)
     {
         // Can I check Inputs?
         if (doInputChecking)
@@ -55,7 +58,7 @@ public class InputController : MonoBehaviour
                     //otherCol.transform.gameObject.SendMessage("KillMe", 0, SendMessageOptions.DontRequireReceiver);
                     /// End Obsolete ///
 
-                    // Make it Faster
+                    // Make the other GameObject(Animal) faster by calling the "OnClicked" Event
                     GameObject animal = otherCol.gameObject;
                     animal.SendMessage("OnClicked", SendMessageOptions.DontRequireReceiver);
                 }
@@ -81,5 +84,4 @@ public class InputController : MonoBehaviour
     {
         doInputChecking = true;
     }
-
 }
