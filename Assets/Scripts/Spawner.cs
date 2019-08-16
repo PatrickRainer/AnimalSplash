@@ -26,8 +26,8 @@ public class Spawner : MonoBehaviour
     // Playing height
     float height;
 
-    // The GameController
-    GameObject gameController;
+    // The LevelManager
+    GameObject levelManager;
 
     // A Timer for GUItext
     private float remTime;
@@ -36,7 +36,7 @@ public class Spawner : MonoBehaviour
     private void Start()
     {
         // Game Controller assign
-        gameController = GameObject.FindGameObjectWithTag("GameController");
+        levelManager = GameObject.FindGameObjectWithTag("LevelManager");
 
         // Display width
         width = Screen.width;
@@ -46,7 +46,7 @@ public class Spawner : MonoBehaviour
         currentIntervallLength = startIntervalLength;
 
         // Start the first Wave
-        //StartSpawnInterval();     // Obsolete: Do it over the Gamecontroller
+        //StartSpawnInterval();     // Obsolete: Do it over the LevelController
     }
 
     private void Update()
@@ -89,7 +89,7 @@ public class Spawner : MonoBehaviour
         InvokeRepeating("Spawn",1, currentSpawnDelay);
 
         // Ends the Level by the Timer
-        GameController.Instance.Invoke("EndLevel", startIntervalLength);
+        LevelController.Instance.Invoke("EndLevel", startIntervalLength);
         // Set the Timer to the Invoke Time
         remTime = startIntervalLength;
     }
@@ -109,7 +109,7 @@ public class Spawner : MonoBehaviour
         CancelInvoke();
     }
 
-    [Obsolete("Method is not in use anymore, instead we use TimeScale to Pause the Game, located in the GameController")]
+    [Obsolete("Method is not in use anymore, instead we use TimeScale to Pause the Game, located in the LevelController")]
     public void PauseMovingAnimals()
     {
         // Search for all Animals

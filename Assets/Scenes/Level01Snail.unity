@@ -535,6 +535,7 @@ MonoBehaviour:
   sceneStatus: 0
   myGui: {fileID: 0}
   myInputController: {fileID: 0}
+  tempTimeScale: 0
 --- !u!1 &256642123
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,7 +33,7 @@ public class GUIController : MonoBehaviour
 
     private void Start()
     {
-        mySpawner = GameObject.FindGameObjectWithTag("GameController").GetComponent<Spawner>();
+        mySpawner = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<Spawner>();
 
         // Hide Pause and SettingsMenu
         pauseMenuUI.SetActive(false);

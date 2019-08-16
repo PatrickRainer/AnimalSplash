@@ -28,7 +28,7 @@ public class Killing : MonoBehaviour
         moving = GetComponent<Moving>();
 
         // Get the Gui Controller
-        guicontroller = GameObject.FindGameObjectWithTag("GameController").GetComponent<GUIController>();
+        guicontroller = GameObject.FindGameObjectWithTag("GuiManager").GetComponent<GUIController>();
 
     }
 

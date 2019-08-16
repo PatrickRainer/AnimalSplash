@@ -2,11 +2,11 @@
 using UnityEngine.SceneManagement;
 using System;
 
-public class GameController : MonoBehaviour
+public class LevelController : MonoBehaviour
 {
     #region SingletonPattern
-    private static GameController _instance;
-    public static GameController Instance { get { return _instance; } }
+    private static LevelController _instance;
+    public static LevelController Instance { get { return _instance; } }
 
     private void Awake()
     {
@@ -14,7 +14,6 @@ public class GameController : MonoBehaviour
     }
     #endregion
 
-    //public GameController gameController;
     public Camera mainCam;
     public GameObject pauseMenu;
     public GameObject myGameOverlay;
