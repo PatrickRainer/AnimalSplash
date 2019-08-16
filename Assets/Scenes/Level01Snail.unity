@@ -2876,7 +2876,7 @@ GameObject:
   - component: {fileID: 1697419514}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2974,6 +2974,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1829465864}
+  - component: {fileID: 1829465868}
+  - component: {fileID: 1829465867}
+  - component: {fileID: 1829465866}
+  - component: {fileID: 1829465865}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -2995,6 +2999,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1829465865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829465863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16240cbf8bdce6c43ba19f5103288b17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelText: {fileID: 0}
+  prefs: []
+  startIntervalLength: 10
+  currentIntervallLength: 0
+  currentSpawnDelay: 1
+  guiText: {fileID: 0}
+--- !u!114 &1829465866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829465863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f46a2f321e27b942a99da8d20c90ca1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 0}
+  pauseMenu: {fileID: 0}
+  myGameOverlay: {fileID: 0}
+  mySpawner: {fileID: 0}
+  sceneStatus: 0
+  myGui: {fileID: 0}
+  myInputController: {fileID: 0}
+--- !u!114 &1829465867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829465863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce0b3b581ae33e46acec43833fbac15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefab:
+  - {fileID: 4934078994073165354, guid: b8a90544139b2fa4abc2309fa43d355e, type: 3}
+  levelDuration: 15
+  spawningDelay: 1
+--- !u!114 &1829465868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829465863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88939e8fd5e68284987c7dcecce334c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1845161897
 GameObject:
   m_ObjectHideFlags: 0
