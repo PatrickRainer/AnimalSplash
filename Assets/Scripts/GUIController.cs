@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GUIController : MonoBehaviour
 {
     // Panel for the complete Game-Over-Menue
-    public GameObject uiPanel;
+    public GameObject pauseMenuUI;
     // Highscore Menu Title
     public Text HighscoreTitle;
     // Top Text-Object
@@ -35,8 +35,8 @@ public class GUIController : MonoBehaviour
     {
         mySpawner = GameObject.FindGameObjectWithTag("GameController").GetComponent<Spawner>();
 
-        // Hide Game-Over-Menue
-        uiPanel.SetActive(false);
+        // Hide Pause and SettingsMenu
+        pauseMenuUI.SetActive(false);
 
         // Variable with 0
         beginningHs = 0;
@@ -68,7 +68,7 @@ public class GUIController : MonoBehaviour
         }
 
         // Show the Pause Menu
-        uiPanel.SetActive(true);
+        pauseMenuUI.SetActive(true);
     }
 
     /// <summary>
@@ -77,7 +77,7 @@ public class GUIController : MonoBehaviour
     public void HidePauseMenu()
     {
         // Hide the Game-Over-Menue
-        uiPanel.SetActive(false);
+        pauseMenuUI.SetActive(false);
     }
 
     public void DisableResumeButton()
