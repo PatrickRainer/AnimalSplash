@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(AudioSource))]
 public class MusicController : MonoBehaviour
@@ -17,10 +18,8 @@ public class MusicController : MonoBehaviour
 
     #region Members
 
-    public List<AudioClip> musicTracks = new List<AudioClip>();
-    public float Volume { get { return myAudiosource.volume; } set { myAudiosource.volume = value; SaveVolumeToPrefs(); PlayerPrefs.Save(); } }
+    public Slider volumeSlider;
     private AudioSource myAudiosource;
-    private int currentTrackIndex;
 
     #endregion
 
@@ -28,53 +27,19 @@ public class MusicController : MonoBehaviour
     private void Start()
     {
         myAudiosource = GetComponent<AudioSource>();
-        PlayAllTracksInLoop();
         LoadVolumeFromPrefs();
+        volumeSlider.value = myAudiosource.volume;   
     }
     #endregion
 
     #region Methods
-    private void Update()
-    {
-        if (!myAudiosource.isPlaying)
-        {
-            PlayNextTrack();
-        }
-    }
-
-    private void PlayNextTrack()
-    {
-        if (currentTrackIndex<musicTracks.Count)
-        {
-            myAudiosource.clip = musicTracks[currentTrackIndex + 1];
-        }
-        else if (currentTrackIndex>=musicTracks.Count)
-        {
-            myAudiosource.clip = musicTracks[0];
-        }
-        
-    }
 
     private void LoadVolumeFromPrefs()
     {
         if (PlayerPrefs.HasKey("MusicVolume"))
         {
-            Volume = PlayerPrefs.GetFloat("MusicVolume");
+            myAudiosource.volume = PlayerPrefs.GetFloat("MusicVolume");
         }
-        
-    }
-
-
-    private void PlayTrack(int trackNumber)
-    {
-
-    }
-
-    private void PlayAllTracksInLoop()
-    {
-        myAudiosource.clip = musicTracks[0];
-        myAudiosource.loop = true;
-        myAudiosource.Play();
     }
 
     private void StopMusic()
@@ -82,14 +47,14 @@ public class MusicController : MonoBehaviour
         myAudiosource.Stop();
     }
 
-    private void SetVolume(float volume)
+    private void OnDestroy()
     {
-        Volume = volume;
+        SaveVolumeToPrefs();
     }
 
     private void SaveVolumeToPrefs()
     {
-        PlayerPrefs.SetFloat("MusicVolume", Volume);
+        PlayerPrefs.SetFloat("MusicVolume", myAudiosource.volume);
     }
     #endregion
 }

@@ -44,9 +44,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.19
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -143,3 +143,4 @@ MonoBehaviour:
   musicTracks:
   - {fileID: 8300000, guid: d1b147d9ff0f40b448d7a7a1c3743c87, type: 3}
   - {fileID: 8300000, guid: 05ddfe0be82b4884a80883fd919e0cec, type: 3}
+  volumeSlider: {fileID: 0}
