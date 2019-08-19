@@ -57,6 +57,9 @@ public class InputController : MonoBehaviour
                     GameObject animal = otherCol.gameObject;
                     animal.SendMessage("SetIsClicked", true, 
                         SendMessageOptions.DontRequireReceiver);
+
+                    //Animate the Star in the overlay TODO: At the moment I don't know how to do it by an event
+                    GameObject.Find("GameOverlay").GetComponent<GameOverlayController>().AnimateStar();
                 }
             }                               
         }

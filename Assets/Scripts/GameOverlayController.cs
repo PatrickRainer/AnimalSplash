@@ -25,12 +25,13 @@ public class GameOverlayController : MonoBehaviour
     {
         
     }
-
+    public void AnimateStar()
+    {
+        scoreStarAnim.SetTrigger("HeartBeatTrigger");
+        
+    }
     private void OnGUI()
     {
-        timerFillbar.value=LevelPrefs.Instance.levelDuration / 100 * levelTimer.timeLeft;
-
-        scoreStarAnim.SetTrigger("HeartBeatTrigger");
-     
+        timerFillbar.value=LevelPrefs.Instance.levelDuration / 100 * levelTimer.timeLeft;     
     }
 }
