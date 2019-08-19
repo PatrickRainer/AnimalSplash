@@ -55,7 +55,7 @@ public class InputController : MonoBehaviour
                 {
                     // Make the other GameObject(Animal) faster by calling the "OnClicked" Handler
                     GameObject animal = otherCol.gameObject;
-                    animal.SendMessage("AnimalBehaviour_AnimalOnClicked", 
+                    animal.SendMessage("SetIsClicked", true, 
                         SendMessageOptions.DontRequireReceiver);
                 }
             }                               

@@ -14,6 +14,7 @@ public class AnimalBehaviour : MonoBehaviour
     // The own AudioSource
     AudioSource audioSource;
 
+    // The Animal onClicked Event
     public delegate void AnimalClicked();
     public event AnimalClicked AnimalOnClicked;
 
@@ -27,15 +28,12 @@ public class AnimalBehaviour : MonoBehaviour
         AnimalOnClicked += AnimalBehaviour_AnimalOnClicked;
     }
 
-    public void SetIsClicked()
+    public void SetIsClicked(bool status)
     {
-        isClicked = true;
+        isClicked = status;
     }
     private void AnimalBehaviour_AnimalOnClicked()
     {
-        // If I am not already clicked
-        if (!_isClicked)
-        {
             // Play the AudioClip at my Position
             audioSource.Play();
 
@@ -51,9 +49,8 @@ public class AnimalBehaviour : MonoBehaviour
             // Set new Postion, so that other objects lay over this
             transform.position = pos;
 
-            // hasClicked to true
-            isClicked = true;
-        }
+            // Unassign the EventHandler
+            AnimalOnClicked -= AnimalBehaviour_AnimalOnClicked;
     }
 
     private void Update()
