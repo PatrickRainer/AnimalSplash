@@ -28,7 +28,7 @@ public class GameOverlayController : MonoBehaviour
     public void AnimateStar()
     {
         scoreStarAnim.SetTrigger("HeartBeatTrigger");
-        
+
     }
     private void OnGUI()
     {
