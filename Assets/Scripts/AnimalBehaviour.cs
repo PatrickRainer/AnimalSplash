@@ -7,11 +7,15 @@ public class AnimalBehaviour : MonoBehaviour
     // Should I stop?
     private bool stop = false;
     // Am I clicked before reaching the finishCollider
-    public bool hasClicked = false;
+    private bool _isClicked = false;
+    public bool isClicked { get { return _isClicked; } set { _isClicked = value; AnimalOnClicked(); } }
     // The own Animator
     Animator anim;
     // The own AudioSource
     AudioSource audioSource;
+
+    public delegate void AnimalClicked();
+    public event AnimalClicked AnimalOnClicked;
 
     private void Start()
     {
@@ -19,6 +23,37 @@ public class AnimalBehaviour : MonoBehaviour
         anim = GetComponent<Animator>();
         // Get the Audiosource
         audioSource = GetComponent<AudioSource>();
+        // Assign the OnClicked event
+        AnimalOnClicked += AnimalBehaviour_AnimalOnClicked;
+    }
+
+    public void SetIsClicked()
+    {
+        isClicked = true;
+    }
+    private void AnimalBehaviour_AnimalOnClicked()
+    {
+        // If I am not already clicked
+        if (!_isClicked)
+        {
+            // Play the AudioClip at my Position
+            audioSource.Play();
+
+            // Speed up
+            this.speed = 10;
+
+            // Save my Position temporary
+            Vector3 pos = transform.position;
+
+            // Push my position backwards
+            pos.z = 5;
+
+            // Set new Postion, so that other objects lay over this
+            transform.position = pos;
+
+            // hasClicked to true
+            isClicked = true;
+        }
     }
 
     private void Update()
@@ -40,36 +75,6 @@ public class AnimalBehaviour : MonoBehaviour
     void StopMoving()
     {
         stop = true;
-    }
-
-    void OnClicked()
-    {
-        // If I am not already clicked
-        if (!hasClicked)
-        {
-            // Play the AudioClip at my Position
-            audioSource.Play();
-
-            // Speed up
-            this.speed = 10;
-
-            // Save my Position temporary
-            Vector3 pos = transform.position;
-
-            // Push my position backwards
-            pos.z = 5;
-
-            // Set new Postion, so that other objects lay over this
-            transform.position = pos;
-
-            // hasClicked to true
-            hasClicked = true;
-
-            //Count Points
-            GameObject myGUI = GameObject.Find("GuiController");
-            myGUI.GetComponent<GUIController>().CurrentPoints++;
-
-        }
     }
 
     public void DestroyMe()

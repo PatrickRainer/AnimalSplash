@@ -53,19 +53,12 @@ public class InputController : MonoBehaviour
                 // Is it an enemy?
                 if (otherCol.gameObject.CompareTag("Enemy"))
                 {
-                    /// Obsolete /// 
-                    // ... then destroy it
-                    //otherCol.transform.gameObject.SendMessage("KillMe", 0, SendMessageOptions.DontRequireReceiver);
-                    /// End Obsolete ///
-
-                    // Make the other GameObject(Animal) faster by calling the "OnClicked" Event
+                    // Make the other GameObject(Animal) faster by calling the "OnClicked" Handler
                     GameObject animal = otherCol.gameObject;
-                    animal.SendMessage("OnClicked", SendMessageOptions.DontRequireReceiver);
+                    animal.SendMessage("AnimalBehaviour_AnimalOnClicked", 
+                        SendMessageOptions.DontRequireReceiver);
                 }
-            }
-
-
-         
+            }                               
         }
     }
 

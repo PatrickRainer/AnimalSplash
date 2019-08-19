@@ -23,4 +23,14 @@ public class GameController : MonoBehaviour
     }
     #endregion
 
+    /// <summary>
+    /// Quits the Game
+    /// </summary>
+    public void QuitGame()
+    {
+        // TODO: Add WebPlayer, Android and Iphone Quit. Example is here: https://answers.unity.com/questions/161858/startstop-playmode-from-editor-script.html
+        Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
+    }
+
 }
