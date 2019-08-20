@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 95a27cda6889bfd45a8f6a58bf85027d
   - enabled: 1
-    path: Assets/Scenes/DemoScene.unity
-    guid: 77645683ade040f48b7262eba27875fe
+    path: Assets/Scenes/Level01Snail.unity
+    guid: 4dd594d8bd1a0bc4bb84e399baa13d63
+  - enabled: 1
+    path: Assets/Scenes/Level02Turtle.unity
+    guid: e1e403c610594a84489e3f4363824009
   m_configObjects: {}

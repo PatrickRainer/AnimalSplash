@@ -13,6 +13,7 @@ public class MusicController : MonoBehaviour
     private void Awake()
     {
         _instance = this;
+        volumeSlider = GameObject.Find("VolumeSlider").GetComponent<Slider>();
     }
     #endregion
 
@@ -26,6 +27,7 @@ public class MusicController : MonoBehaviour
     #region Initializing
     private void Start()
     {
+
         myAudiosource = GetComponent<AudioSource>();
         LoadVolumeFromPrefs();
         volumeSlider.value = myAudiosource.volume;   
