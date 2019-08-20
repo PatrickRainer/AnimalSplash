@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System;
+using UnityEngine.Events;
+using System.Collections.Generic;
 
 [RequireComponent(typeof(LevelPrefs))]
 public class Spawner : MonoBehaviour
@@ -9,6 +10,12 @@ public class Spawner : MonoBehaviour
     #region Members
     private LevelPrefs myLevelPrefs;
     private float remainingTime;
+    private GameObject currentSpawnedAnimal;
+    public List<GameObject> spawnedAnimals = new List<GameObject>();
+    #endregion
+
+    #region Events
+    public UnityEvent<GameObject> ObjectSpawned;
     #endregion
 
     private void Start()
@@ -28,8 +35,10 @@ public class Spawner : MonoBehaviour
         Vector3 wp = Camera.main.ScreenToWorldPoint(pos);
         wp.z = 0;
 
-        Instantiate(myLevelPrefs.animalPrefab[UnityEngine.Random.Range(0, myLevelPrefs.animalPrefab.Length)], 
+        currentSpawnedAnimal=Instantiate(myLevelPrefs.animalPrefab[UnityEngine.Random.Range(0, myLevelPrefs.animalPrefab.Length)], 
             wp, Quaternion.identity);
+
+        spawnedAnimals.Add(currentSpawnedAnimal);
     }
 
     public void StartSpawning()

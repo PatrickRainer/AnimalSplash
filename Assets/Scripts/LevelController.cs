@@ -6,6 +6,7 @@ using System.Timers;
 [RequireComponent(typeof(Spawner))]
 [RequireComponent(typeof(LevelPrefs))]
 [RequireComponent(typeof(LevelTimer))]
+[RequireComponent(typeof(InputController))]
 /// <summary>
 /// Controls the Level with the Main Function like Start, End, Pause
 /// </summary>
@@ -26,6 +27,7 @@ public class LevelController : MonoBehaviour
     private LevelPrefs myLevelPrefs;
     private float currentTimeScale;
     private LevelTimer myTimer;
+    private InputController myInputController;
     #endregion
 
     #region Events
@@ -41,6 +43,7 @@ public class LevelController : MonoBehaviour
         mySpawner = GetComponent<Spawner>();
         myLevelPrefs = GetComponent<LevelPrefs>();
         myTimer = GetComponent<LevelTimer>();
+        myInputController = GetComponent<InputController>();
         OnLevelEnds += LevelController_OnLevelEnds;
         StartSpawning();
     }
@@ -51,6 +54,7 @@ public class LevelController : MonoBehaviour
     {
         mySpawner.StopSpawning();
         Time.timeScale = 0;
+        myInputController.StopInputChecking();
     }
     #endregion
 

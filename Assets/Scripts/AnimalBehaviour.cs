@@ -8,7 +8,8 @@ public class AnimalBehaviour : MonoBehaviour
     private bool stop = false;
     // Am I clicked before reaching the finishCollider
     private bool _isClicked = false;
-    public bool isClicked { get { return _isClicked; } set { _isClicked = value; AnimalOnClicked(); } }
+    public bool isClicked { get { return _isClicked; }
+        set { _isClicked = value; AnimalOnClicked(); } }
     // The own Animator
     Animator anim;
     // The own AudioSource
