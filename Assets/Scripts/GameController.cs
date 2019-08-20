@@ -18,7 +18,7 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         _instance = this;
-        DontDestroyOnLoad(this.gameObject);
+        //TODO: DontDestroyOnLoad(this.gameObject);
     }
     #endregion
 

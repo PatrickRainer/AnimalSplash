@@ -40,12 +40,14 @@ public class LevelController : MonoBehaviour
     #region Initializing
     private void Start()
     {
+        Time.timeScale = 1;
         mySpawner = GetComponent<Spawner>();
         myLevelPrefs = GetComponent<LevelPrefs>();
         myTimer = GetComponent<LevelTimer>();
         myInputController = GetComponent<InputController>();
         OnLevelEnds += LevelController_OnLevelEnds;
         StartSpawning();
+
     }
     #endregion
 
@@ -82,7 +84,7 @@ public class LevelController : MonoBehaviour
     }
     public void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);       
     }
     /// <summary>
     /// Resumes the Game usually from the Pause Menu
