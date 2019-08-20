@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - SceneController
+  - GameManager
   layers:
   - Default
   - TransparentFX

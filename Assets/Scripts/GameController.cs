@@ -18,7 +18,15 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         _instance = this;
-        //TODO: DontDestroyOnLoad(this.gameObject);
+
+        /// Dont destroy on load mechanic
+        GameObject[] gameManagers = GameObject.FindGameObjectsWithTag("GameManager");
+        if (gameManagers.Length>1)
+        {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(this.gameObject);
+        /// Dont destroy on load mechanic
     }
     #endregion
 
