@@ -13,12 +13,6 @@ public class PauseMenuController : MonoBehaviour
     {
        this.gameObject.SetActive(false);
     }
-
-    private void OnGUI()
-    {
-        
-    }
-
     public void ShowPauseMenu(bool SetResumeBtnActive)
     {
         this.gameObject.SetActive(true);

@@ -68,7 +68,8 @@ public class LevelController : MonoBehaviour
     }
     public void EndLevel()
     {
-        OnLevelEnds();       
+        OnLevelEnds();
+        
     }
     public void PauseLevel()
     {
