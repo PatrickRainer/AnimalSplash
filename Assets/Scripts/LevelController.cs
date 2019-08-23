@@ -22,12 +22,27 @@ public class LevelController : MonoBehaviour
     }
     #endregion
 
+    #region Enumerations
+    public enum eLevelStatus
+    {
+        isPlaying,
+        isPaused,
+        isEnded
+    }
+    #endregion
+
     #region Members
     private Spawner mySpawner;
     private LevelPrefs myLevelPrefs;
     private float currentTimeScale;
     private LevelTimer myTimer;
     private InputController myInputController;
+    private eLevelStatus _levelStatus;
+    #endregion
+
+    #region Properties
+    public eLevelStatus LevelStatus { get { return _levelStatus; }
+        set { _levelStatus = value; OnLevelStatusChanged(); } }
     #endregion
 
     #region Events
@@ -35,6 +50,10 @@ public class LevelController : MonoBehaviour
     public event LevelEnds OnLevelEnds;
     public delegate void LevelPauses();
     public event LevelPauses OnLevelPauses;
+    public delegate void LevelPlays();
+    public event LevelPlays OnLevelPlays;
+    public delegate void LevelStatusChanged();
+    public event LevelStatusChanged OnLevelStatusChanged;
     #endregion
 
     #region Initializing
@@ -47,7 +66,6 @@ public class LevelController : MonoBehaviour
         myInputController = GetComponent<InputController>();
         OnLevelEnds += LevelController_OnLevelEnds;
         StartSpawning();
-
     }
     #endregion
 
@@ -93,6 +111,8 @@ public class LevelController : MonoBehaviour
     {
         GetComponent<InputController>().ResumeInputChecking();
         Time.timeScale = currentTimeScale;
+        OnLevelPlays();
+        LevelStatus = eLevelStatus.isPlaying;
     }
     #endregion
 }

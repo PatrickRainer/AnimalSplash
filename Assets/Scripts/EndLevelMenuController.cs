@@ -10,6 +10,7 @@ public class EndLevelMenuController : MonoBehaviour
         //Assign Event
         LevelController lc = GameObject.Find("LevelManager").GetComponent<LevelController>();
         lc.OnLevelEnds += ShowEndLevelMenu;
+        lc.OnLevelPlays += HideEndLevelMenu;
     }
     private void Start()
     {
@@ -22,5 +23,9 @@ public class EndLevelMenuController : MonoBehaviour
     private void ShowEndLevelMenu()
     {
         this.gameObject.SetActive(true);
+    }
+    private void HideEndLevelMenu()
+    {
+        this.gameObject.SetActive(false);
     }
 }
