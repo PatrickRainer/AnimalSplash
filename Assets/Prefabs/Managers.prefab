@@ -2209,6 +2209,7 @@ GameObject:
   - component: {fileID: 1643343248772280807}
   - component: {fileID: 1643343248772280804}
   - component: {fileID: 1643343248772280805}
+  - component: {fileID: 891852447289920527}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -2254,6 +2255,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66d590e3b1eabe9489a21f3eef9948f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &891852447289920527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643343248772280806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ce53f429365b1e43a62fdf6be1a9ec7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnLevelEnds:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnLevelPauses:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnLevelPlays:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!1 &1643343248782204016
 GameObject:
   m_ObjectHideFlags: 0

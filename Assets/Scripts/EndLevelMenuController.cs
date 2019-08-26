@@ -5,12 +5,15 @@ using System;
 public class EndLevelMenuController : MonoBehaviour
 {
     public Image[] scoringStars;
+    private EventManager myEventManager;
 
     private void Awake()
     {
         //Assign Event
         LevelController lc = GameObject.Find("LevelManager").GetComponent<LevelController>();
-        lc.OnLevelEnds += ShowEndLevelMenu;
+        myEventManager = GameObject.FindObjectOfType<EventManager>();
+        myEventManager.OnLevelEnds.AddListener(ShowEndLevelMenu);
+        myEventManager.OnLevelPlays.AddListener(HideEndLevelMenu);
     }
     private void Start()
     {
@@ -42,7 +45,6 @@ public class EndLevelMenuController : MonoBehaviour
         {
             number /= 10;
         }
-        Debug.Log("FirstDigit: "+(int)number);
         return (int)number;
     }
 
@@ -56,14 +58,15 @@ public class EndLevelMenuController : MonoBehaviour
             number = number % 1;
             return number;
         }
-
-        Debug.Log("Second Digit: " + number);
-
         return 0f;
     }
     private void ShowEndLevelMenu()
     {
         this.gameObject.SetActive(true);
         FillStars();
+    }
+    private void HideEndLevelMenu()
+    {
+        this.gameObject.SetActive(false);
     }
 }
