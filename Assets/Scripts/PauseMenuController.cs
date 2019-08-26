@@ -5,12 +5,14 @@ public class PauseMenuController : MonoBehaviour
 {
     private Button btnResume;
     private LevelController myLevelController;
+    private EventManager myEventManager;
 
     private void Awake()
     {
         btnResume = GameObject.Find("BtnResume").GetComponent<Button>();
+        myEventManager = GameObject.FindObjectOfType<EventManager>();
         myLevelController = GameObject.Find("LevelManager").GetComponent<LevelController>();
-        myLevelController.OnLevelPlays += HidePauseMenu;
+        myEventManager.OnLevelPlays.AddListener(HidePauseMenu);
     }
 
     private void HidePauseMenu()

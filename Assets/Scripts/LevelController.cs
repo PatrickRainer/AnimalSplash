@@ -21,39 +21,24 @@ public class LevelController : MonoBehaviour
         _instance = this;
     }
     #endregion
-
-    #region Enumerations
-    public enum eLevelStatus
-    {
-        isPlaying,
-        isPaused,
-        isEnded
-    }
-    #endregion
-
     #region Members
     private Spawner mySpawner;
     private LevelPrefs myLevelPrefs;
     private float currentTimeScale;
     private LevelTimer myTimer;
     private InputController myInputController;
-    private eLevelStatus _levelStatus;
-    #endregion
-
-    #region Properties
-    public eLevelStatus LevelStatus { get { return _levelStatus; }
-        set { _levelStatus = value; OnLevelStatusChanged(); } }
+    private EventManager myEventManager;
     #endregion
 
     #region Events
-    public delegate void LevelEnds();
-    public event LevelEnds OnLevelEnds;
-    public delegate void LevelPauses();
-    public event LevelPauses OnLevelPauses;
-    public delegate void LevelPlays();
-    public event LevelPlays OnLevelPlays;
-    public delegate void LevelStatusChanged();
-    public event LevelStatusChanged OnLevelStatusChanged;
+    //public delegate void LevelEnds();
+    //public event LevelEnds OnLevelEnds;
+    //public delegate void LevelPauses();
+    //public event LevelPauses OnLevelPauses;
+    //public delegate void LevelPlays();
+    //public event LevelPlays OnLevelPlays;
+    //public delegate void LevelStatusChanged();
+    //public event LevelStatusChanged OnLevelStatusChanged;
     #endregion
 
     #region Initializing
@@ -64,17 +49,9 @@ public class LevelController : MonoBehaviour
         myLevelPrefs = GetComponent<LevelPrefs>();
         myTimer = GetComponent<LevelTimer>();
         myInputController = GetComponent<InputController>();
-        OnLevelEnds += LevelController_OnLevelEnds;
+        myEventManager = GameObject.FindObjectOfType<EventManager>();
+        myEventManager.OnLevelEnds.AddListener(EndLevel);
         StartSpawning();
-    }
-    #endregion
-
-    #region EventHandlers
-    private void LevelController_OnLevelEnds()
-    {
-        mySpawner.StopSpawning();
-        Time.timeScale = 0;
-        myInputController.StopInputChecking();
     }
     #endregion
 
@@ -84,12 +61,19 @@ public class LevelController : MonoBehaviour
         mySpawner.StartSpawning();
         
         myTimer.StartTimer(myLevelPrefs.levelDuration);
-        myTimer.OnTimerEnds += EndLevel;
+        myTimer.OnTimerEnds += MyTimer_OnTimerEnds;
     }
+
+    private void MyTimer_OnTimerEnds()
+    {
+        myEventManager.OnLevelEnds.Invoke();
+    }
+
     public void EndLevel()
     {
-        OnLevelEnds();
-        
+        mySpawner.StopSpawning();
+        Time.timeScale = 0;
+        myInputController.StopInputChecking();
     }
     public void PauseLevel()
     {
@@ -102,7 +86,7 @@ public class LevelController : MonoBehaviour
     }
     public void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);       
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   
     }
     /// <summary>
     /// Resumes the Game usually from the Pause Menu
@@ -111,8 +95,7 @@ public class LevelController : MonoBehaviour
     {
         GetComponent<InputController>().ResumeInputChecking();
         Time.timeScale = currentTimeScale;
-        OnLevelPlays();
-        LevelStatus = eLevelStatus.isPlaying;
+        myEventManager.OnLevelPlays.Invoke();
     }
     #endregion
 }
