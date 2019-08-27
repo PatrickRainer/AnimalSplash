@@ -16,10 +16,7 @@ public class LevelController : MonoBehaviour
     private static LevelController _instance;
     public static LevelController Instance { get { return _instance; } }
 
-    private void Awake()
-    {
-        _instance = this;
-    }
+
     #endregion
     #region Members
     private Spawner mySpawner;
@@ -30,22 +27,16 @@ public class LevelController : MonoBehaviour
     private EventManager myEventManager;
     #endregion
 
-    #region Events
-    //public delegate void LevelEnds();
-    //public event LevelEnds OnLevelEnds;
-    //public delegate void LevelPauses();
-    //public event LevelPauses OnLevelPauses;
-    //public delegate void LevelPlays();
-    //public event LevelPlays OnLevelPlays;
-    //public delegate void LevelStatusChanged();
-    //public event LevelStatusChanged OnLevelStatusChanged;
-    #endregion
-
     #region Initializing
+    private void Awake()
+    {
+        _instance = this;
+        mySpawner = GetComponent<Spawner>();
+    }
     private void Start()
     {
         Time.timeScale = 1;
-        mySpawner = GetComponent<Spawner>();
+        
         myLevelPrefs = GetComponent<LevelPrefs>();
         myTimer = GetComponent<LevelTimer>();
         myInputController = GetComponent<InputController>();
@@ -86,7 +77,7 @@ public class LevelController : MonoBehaviour
     }
     public void RestartLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);   
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     /// <summary>
     /// Resumes the Game usually from the Pause Menu

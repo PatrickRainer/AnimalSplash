@@ -12,10 +12,14 @@ public class Spawner : MonoBehaviour
         new ObservableCollection<GameObject>();
     #endregion
 
-    private void Start()
+    private void Awake()
     {
         myLevelPrefs = GetComponent<LevelPrefs>();
         remainingTime = myLevelPrefs.levelDuration;
+    }
+    private void Start()
+    {
+    
     }
 
     /// <summary>

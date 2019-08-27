@@ -7,8 +7,6 @@ public class ScoreCounter : MonoBehaviour
     private float currentScore=0;
     [HideInInspector]
     public float starsToFillAmount=0f;
-
-
     private Spawner spawner;
 
     private void Awake()
