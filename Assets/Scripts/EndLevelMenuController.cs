@@ -26,8 +26,8 @@ public class EndLevelMenuController : MonoBehaviour
     private void FillStars()
     {
         ScoreCounter scoreCounter = GameObject.Find("LevelManager").GetComponent<ScoreCounter>();
-        int completeStarsToFill = FirstDigit(scoreCounter.starsToFillAmount);
-        float partlyStarToFill = SecondDigit(scoreCounter.starsToFillAmount);
+        int completeStarsToFill = GetFirstDigit(scoreCounter.starsToFillAmount);
+        float partlyStarToFill = GetSecondDigit(scoreCounter.starsToFillAmount);
 
         //Fill CompleteStars
         for (int i = 0; i < completeStarsToFill; i++)
@@ -36,10 +36,18 @@ public class EndLevelMenuController : MonoBehaviour
         }
 
         //Fill the partly Star
-        scoringStars[completeStarsToFill].fillAmount = partlyStarToFill;
-    }
+        if (partlyStarToFill>0.1f)
+        {
+            scoringStars[completeStarsToFill].fillAmount = partlyStarToFill;
+        }
 
-    private static int FirstDigit(float number)
+    }
+    /// <summary>
+    /// Gets the first Digit of any Number
+    /// </summary>
+    /// <param name="number"></param>
+    /// <returns></returns>
+    private static int GetFirstDigit(float number)
     {
         while (number>=10)
         {
@@ -47,8 +55,12 @@ public class EndLevelMenuController : MonoBehaviour
         }
         return (int)number;
     }
-
-    private static float SecondDigit(float number)
+    /// <summary>
+    /// Gets the second Digit of any number
+    /// </summary>
+    /// <param name="number"></param>
+    /// <returns></returns>
+    private static float GetSecondDigit(float number)
     {
         // Check if it has a decimal
         if ((number % 1) != 0)
