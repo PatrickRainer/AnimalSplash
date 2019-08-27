@@ -16,9 +16,8 @@ public class MusicController : MonoBehaviour
         volumeSlider = GameObject.Find("VolumeSlider").GetComponent<Slider>();
     }
     #endregion
-
     #region Members
-
+    [HideInInspector]
     public Slider volumeSlider;
     private AudioSource myAudiosource;
 
@@ -27,7 +26,6 @@ public class MusicController : MonoBehaviour
     #region Initializing
     private void Start()
     {
-
         myAudiosource = GetComponent<AudioSource>();
         LoadVolumeFromPrefs();
         volumeSlider.value = myAudiosource.volume;   
