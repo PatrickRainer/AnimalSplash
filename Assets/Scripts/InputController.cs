@@ -9,6 +9,12 @@ public class InputController : MonoBehaviour
 {
     // Can I check inputs?
     private bool doInputChecking = true;
+    private GameOverlayController myGameOverlay;
+
+    private void Awake()
+    {
+        myGameOverlay = GameObject.Find("GameOverlay").GetComponent<GameOverlayController>();
+    }
 
     private void Update()
     {
@@ -59,7 +65,7 @@ public class InputController : MonoBehaviour
                         SendMessageOptions.DontRequireReceiver);
 
                     //Animate the Star in the overlay TODO: At the moment I don't know how to do it by an event
-                    GameObject.Find("GameOverlay").GetComponent<GameOverlayController>().AnimateStar();
+                    myGameOverlay.AnimateStar();
                 }
             }                               
         }
