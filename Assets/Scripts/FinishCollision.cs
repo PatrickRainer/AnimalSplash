@@ -18,7 +18,7 @@ public class FinishCollision : MonoBehaviour
     {
         AnimalBehaviour animal = collision.gameObject.GetComponent<AnimalBehaviour>();
         // Is an enemy walked into my trigger and was clicked on his way down?
-        if (collision.gameObject.tag=="Enemy" && animal.isClicked)
+        if (collision.gameObject.tag=="Enemy" && animal.IsClicked)
         {
             // Destroy the GameObject of the animal with delay
             animal.DestroyMe();

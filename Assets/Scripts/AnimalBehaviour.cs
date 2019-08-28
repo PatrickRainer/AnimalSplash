@@ -8,7 +8,7 @@ public class AnimalBehaviour : MonoBehaviour
     private bool stop = false;
     // Am I clicked before reaching the finishCollider
     private bool _isClicked = false;
-    public bool isClicked { get { return _isClicked; }
+    public bool IsClicked { get { return _isClicked; }
         set { _isClicked = value; AnimalOnClicked(); } }
     // The own Animator
     Animator anim;
@@ -31,7 +31,7 @@ public class AnimalBehaviour : MonoBehaviour
 
     public void SetIsClicked(bool status)
     {
-        isClicked = status;
+        IsClicked = status;
     }
     private void AnimalBehaviour_AnimalOnClicked()
     {
