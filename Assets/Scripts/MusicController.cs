@@ -6,24 +6,24 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class MusicController : MonoBehaviour
 {
-    #region SingletonPattern
-    private static MusicController _instance;
-    public static MusicController Instance { get { return _instance; } }
-
-    private void Awake()
-    {
-        _instance = this;
-        volumeSlider = GameObject.Find("VolumeSlider").GetComponent<Slider>();
-    }
-    #endregion
     #region Members
     [HideInInspector]
     public Slider volumeSlider;
     private AudioSource myAudiosource;
-
     #endregion
 
     #region Initializing
+    private void Awake()
+    {
+        volumeSlider = GameObject.Find("VolumeSlider").GetComponent<Slider>();
+
+        //UNDONE: The Music shall not restart on reload level
+        if (GameObject.FindObjectsOfType<MusicController>().Length > 1)
+        {
+            Destroy(this.gameObject);
+        }
+        DontDestroyOnLoad(this.gameObject);
+    }
     private void Start()
     {
         myAudiosource = GetComponent<AudioSource>();
