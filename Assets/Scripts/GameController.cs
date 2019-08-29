@@ -42,7 +42,16 @@ public class GameController : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // If the next scene exist
+        if (!SceneManager.GetSceneByBuildIndex(SceneManager.GetActiveScene().buildIndex+1).IsValid())
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+        else
+        {
+            //TODO: EndScreen or something
+        }
+        
     }
 
 }
