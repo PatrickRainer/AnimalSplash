@@ -10,7 +10,6 @@ public class VolumeSliderController : MonoBehaviour
     {
         mySlider = GetComponent<Slider>();
         myMusicSource = GameObject.FindObjectOfType<MusicController>().GetComponent<AudioSource>();
-        //UNDONE: Initialize volume
         mySlider.value = PlayerPrefs.GetFloat("MusicVolume");
         mySlider.onValueChanged.AddListener((value) => { myMusicSource.volume = value; });
     }
