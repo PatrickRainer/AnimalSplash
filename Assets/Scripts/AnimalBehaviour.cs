@@ -27,6 +27,8 @@ public class AnimalBehaviour : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         // Assign the OnClicked event
         AnimalOnClicked += AnimalBehaviour_AnimalOnClicked;
+        // Set Click Volume by PlayerPrefs
+        audioSource.volume = PlayerPrefs.GetFloat("MusicVolume");
     }
 
     public void SetIsClicked(bool status)
