@@ -19,11 +19,6 @@ public class GuiController : MonoBehaviour
     /// </summary>
     public void ShowPauseMenu()
     {
-        // Show PauseMenu
-        //TODO: myGui.ShowPauseMenu();
-        // Disable the resume Button
-        //TODO: in the GUI itself myGui.DisableResumeButton();
-
         // Show the Pause Menu
         pauseMenuUi.SetActive(true);
     }
@@ -46,11 +41,5 @@ public class GuiController : MonoBehaviour
         clr.a = 0.5f;
         txt.color = clr;
         // End Set Transparency
-    }
-
-    public void OnGUI()
-    {
-        //currentScoreText.text = "Score: "+CurrentPoints.ToString();
-        //TODO:TimerText.text = "Timer: "+((int)mySpawner.currentIntervallLength).ToString();
     }
 }

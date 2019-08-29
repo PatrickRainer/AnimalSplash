@@ -17,7 +17,7 @@ public class MusicController : MonoBehaviour
     {
         volumeSlider = GameObject.Find("VolumeSlider").GetComponent<Slider>();
 
-        //UNDONE: The Music shall not restart on reload level
+        //The Music shall not restart on reload level
         if (GameObject.FindObjectsOfType<MusicController>().Length > 1)
         {
             Destroy(this.gameObject);

@@ -35,12 +35,9 @@ public class ScoreCounter : MonoBehaviour
         currentScore++;
         starsToFillAmount = (100/maxScore * currentScore)/20;
 
-        Debug.Log("Gecklickte Sterne/von: "+currentScore.ToString() + "/"+maxScore.ToString());
-
+        // Calculate percentage
         float percent = 0f;
         percent=currentScore / maxScore * 100;
-        Debug.Log("Prozent erfüllt: " + percent + "%");
-        Debug.Log("Anzahl Sterne gefüllt: " + starsToFillAmount.ToString());// TODO: Noch au 5 Sternesystem umrechnen, 100% = 5 Sterne, zb 57% = xy Sterne
     }
 
 }
