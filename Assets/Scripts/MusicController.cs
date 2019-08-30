@@ -54,7 +54,12 @@ public class MusicController : MonoBehaviour
 
     private void SaveVolumeToPrefs()
     {
-        PlayerPrefs.SetFloat("MusicVolume", myAudiosource.volume);
+        // If myAudioSource isnot null, save the volume
+        if (myAudiosource) 
+        {
+            PlayerPrefs.SetFloat("MusicVolume", myAudiosource.volume);
+        }
+        
     }
     #endregion
 }
