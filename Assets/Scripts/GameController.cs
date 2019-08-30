@@ -42,16 +42,20 @@ public class GameController : MonoBehaviour
 
     public void LoadNextLevel()
     {
-        // If the next scene exist
-        if (!SceneManager.GetSceneByBuildIndex(SceneManager.GetActiveScene().buildIndex+1).IsValid())
+        int curSceIdx = SceneManager.GetActiveScene().buildIndex;
+        int numberOfScenes = SceneManager.sceneCountInBuildSettings;
+
+        // Check if next scene exists
+        if (numberOfScenes>curSceIdx+1)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            // and load the scene
+            SceneManager.LoadScene(curSceIdx + 1);
         }
         else
         {
-            //TODO: EndScreen or something
+            //Goto MainMenu
+            SceneManager.LoadScene("MainMenu");
         }
-        
     }
 
 }
