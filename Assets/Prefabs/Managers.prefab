@@ -1746,7 +1746,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4319675644583094944}
-  - component: {fileID: 4319675644583095002}
   - component: {fileID: 4319675644583095003}
   - component: {fileID: 4319675644583095004}
   - component: {fileID: 4319675644583095005}
@@ -1773,22 +1772,6 @@ Transform:
   m_Father: {fileID: 4319675643926858477}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4319675644583095002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4319675644583094945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ce0b3b581ae33e46acec43833fbac15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animalPrefab:
-  - {fileID: 1925310159743489684, guid: ea56ecf9f6c8169479f5ad99c6f4176c, type: 3}
-  levelDuration: 10
-  spawningDelay: 1
 --- !u!114 &4319675644583095003
 MonoBehaviour:
   m_ObjectHideFlags: 0

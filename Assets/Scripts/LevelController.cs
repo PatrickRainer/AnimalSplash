@@ -37,7 +37,7 @@ public class LevelController : MonoBehaviour
     {
         Time.timeScale = 1;
         
-        myLevelPrefs = GetComponent<LevelPrefs>();
+        myLevelPrefs = GameObject.Find("LevelPref").GetComponent<LevelPrefs>();
         myTimer = GetComponent<LevelTimer>();
         myInputController = GetComponent<InputController>();
         myEventManager = GameObject.FindObjectOfType<EventManager>();

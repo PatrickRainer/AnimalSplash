@@ -14,7 +14,7 @@ public class Spawner : MonoBehaviour
 
     private void Awake()
     {
-        myLevelPrefs = GetComponent<LevelPrefs>();
+        myLevelPrefs = GameObject.Find("LevelPref").GetComponent<LevelPrefs>();
         remainingTime = myLevelPrefs.levelDuration;
     }
     private void Start()
