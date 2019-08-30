@@ -9,6 +9,9 @@ public class MainMenuController : MonoBehaviour
         // Prevent from going to Portrait mode
         Screen.autorotateToLandscapeRight = true;
         Screen.orientation = ScreenOrientation.Landscape;
+
+        // Deactivate VolumeSlider
+        GameObject.Find("VolumeSlider").SetActive(false);
     }
 
     // Update is called once per frame
