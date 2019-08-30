@@ -38,7 +38,7 @@ public class GameOverlayController : MonoBehaviour
     }
     private void OnGUI()
     {
-        timerFillbar.value=LevelPrefs.Instance.levelDuration / 100 * levelTimer.timeLeft;     
+        timerFillbar.value=1f / LevelPrefs.Instance.levelDuration * levelTimer.timeLeft;     
     }
     public void AnimateStar()
     {
