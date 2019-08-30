@@ -369,6 +369,53 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9921821944caf1e47b5627426d8cbd23, type: 3}
+--- !u!1 &1162402980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162402982}
+  - component: {fileID: 1162402981}
+  m_Layer: 0
+  m_Name: LevelPref
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1162402981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162402980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ce0b3b581ae33e46acec43833fbac15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefab:
+  - {fileID: 4934078994073165354, guid: b8a90544139b2fa4abc2309fa43d355e, type: 3}
+  levelDuration: 20
+  spawningDelay: 1
+--- !u!4 &1162402982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162402980}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 457.3698, y: 281.28333, z: -180.65047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4319675643901048223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -456,31 +503,5 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4319675644162796834, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319675644808088013, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319675645213154418, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319675644583095002, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
-        type: 3}
-      propertyPath: levelDuration
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4319675644583095002, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
-        type: 3}
-      propertyPath: animalPrefab.Array.data[0]
-      value: 
-      objectReference: {fileID: 4934078994073165354, guid: b8a90544139b2fa4abc2309fa43d355e,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84d8b5877737a25499fd19a9dcfbf8dd, type: 3}
