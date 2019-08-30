@@ -23,7 +23,7 @@ public class MainMenuController : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-        UnityEditor.EditorApplication.isPlaying = false; // TODO: Does error in build mode
+        //UnityEditor.EditorApplication.isPlaying = false; // TODO: Does error in build mode
     }
 
     public void LoadScene(int index)
