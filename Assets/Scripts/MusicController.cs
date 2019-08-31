@@ -7,16 +7,12 @@ using UnityEngine.UI;
 public class MusicController : MonoBehaviour
 {
     #region Members
-    [HideInInspector]
-    public Slider volumeSlider;
     private AudioSource myAudiosource;
     #endregion
 
     #region Initializing
     private void Awake()
     {
-        volumeSlider = GameObject.Find("VolumeSlider").GetComponent<Slider>();
-
         //The Music shall not restart on reload level
         if (GameObject.FindObjectsOfType<MusicController>().Length > 1)
         {
@@ -35,7 +31,6 @@ public class MusicController : MonoBehaviour
     {
         myAudiosource = GetComponent<AudioSource>();
         LoadVolumeFromPrefs();
-        volumeSlider.value = myAudiosource.volume;   
     }
     #endregion
 
