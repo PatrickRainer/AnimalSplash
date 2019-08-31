@@ -3,24 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Awake()
-    {
-        // Deactivate VolumeSlider
-        GameObject.Find("VolumeSlider").SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void QuitGame()
     {
         Application.Quit();
-        //UnityEditor.EditorApplication.isPlaying = false; // TODO: Does error in build mode
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
+
 
     public void LoadScene(int index)
     {
