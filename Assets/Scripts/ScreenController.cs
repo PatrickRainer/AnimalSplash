@@ -7,16 +7,18 @@ using UnityEngine;
 /// </summary>
 public class ScreenController : MonoBehaviour
 {
-    void Start()
+    void Awake()
     {
         SetLandscapeOrientation();
     }
 
     private void SetLandscapeOrientation()
     {
-        // Does prevent from AutoRotation
+        // Prevent from going to Portrait mode
+        Screen.autorotateToLandscapeLeft = true;
+        Screen.autorotateToLandscapeRight = true;
+        Screen.autorotateToPortrait = false;
         Screen.autorotateToPortraitUpsideDown = false;
-        Screen.orientation = ScreenOrientation.Landscape;
     }
 
 }

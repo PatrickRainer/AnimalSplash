@@ -6,10 +6,6 @@ public class MainMenuController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        // Prevent from going to Portrait mode
-        Screen.autorotateToLandscapeRight = true;
-        Screen.orientation = ScreenOrientation.Landscape;
-
         // Deactivate VolumeSlider
         GameObject.Find("VolumeSlider").SetActive(false);
     }
