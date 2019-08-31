@@ -94,8 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -163,6 +163,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -295,80 +296,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &961907850
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2873017350390358412, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_Name
-      value: MusicManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358412, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.027095
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0049212575
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2873017350390358411, guid: 9921821944caf1e47b5627426d8cbd23,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9921821944caf1e47b5627426d8cbd23, type: 3}
 --- !u!1 &1162402980
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,7 +341,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4319675643901048223
 PrefabInstance:
@@ -466,7 +393,7 @@ PrefabInstance:
     - target: {fileID: 4319675643926858477, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4319675643926858477, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
         type: 3}

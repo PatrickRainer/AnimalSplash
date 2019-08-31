@@ -23,6 +23,13 @@ public class MusicController : MonoBehaviour
             Destroy(this.gameObject);
         }
         DontDestroyOnLoad(this.gameObject);
+
+        //Music Init on first GameStart
+        if (!PlayerPrefs.HasKey("MusicVolume"))
+        {
+            PlayerPrefs.SetFloat("MusicVolume", 1f);
+            PlayerPrefs.Save();
+        }
     }
     private void Start()
     {
