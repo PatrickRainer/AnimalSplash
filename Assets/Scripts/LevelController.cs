@@ -41,6 +41,7 @@ public class LevelController : MonoBehaviour
         myTimer = GetComponent<LevelTimer>();
         myInputController = GetComponent<InputController>();
         myEventManager = GameObject.FindObjectOfType<EventManager>();
+        myEventManager.OnLevelEnds.AddListener(EndLevel);
         StartSpawning();
     }
     #endregion
@@ -57,7 +58,7 @@ public class LevelController : MonoBehaviour
     private void MyTimer_OnTimerEnds()
     {
         myEventManager.OnLevelEnds.Invoke();
-        EndLevel();
+        //Done be eventlistener in StartMethod: EndLevel();
     }
 
     public void EndLevel()
