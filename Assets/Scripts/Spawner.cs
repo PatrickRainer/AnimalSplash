@@ -2,7 +2,6 @@
 using UnityEngine.Events;
 using System.Collections.ObjectModel;
 
-[RequireComponent(typeof(LevelPrefs))]
 public class Spawner : MonoBehaviour
 {
     #region Members
