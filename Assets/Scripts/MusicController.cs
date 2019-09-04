@@ -63,5 +63,18 @@ public class MusicController : MonoBehaviour
         }
         
     }
+
+    public void ToggleSound()
+    {
+        if (myAudiosource.isPlaying)
+        {
+            myAudiosource.Pause();
+        }
+        else
+        {
+            myAudiosource.Play();
+        }
+        
+    }
     #endregion
 }
