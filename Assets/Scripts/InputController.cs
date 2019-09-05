@@ -64,7 +64,7 @@ public class InputController : MonoBehaviour
                     animal.SendMessage("SetIsClicked", true, 
                         SendMessageOptions.DontRequireReceiver);
 
-                    //Animate the Star in the overlay TODO: At the moment I don't know how to do it by an event
+                    //Animate the Star in the overlay HACK: At the moment I don't know how to do it by an event
                     myGameOverlay.AnimateStar();
                 }
             }                               
