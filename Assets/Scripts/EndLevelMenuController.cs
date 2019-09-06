@@ -4,9 +4,6 @@ using System;
 
 public class EndLevelMenuController : MonoBehaviour
 {
-    // HACK:
-    int completeStarsToFill;
-
     public Image[] scoringStars;
     private EventManager myEventManager;
     private ScoreCounter scoreCounter;
@@ -29,15 +26,10 @@ public class EndLevelMenuController : MonoBehaviour
     {
         scoringStars[starNumber].fillAmount = fillAmount;
     }
-    private void OnGUI()
-    {
-        //DELETE:
-        GUILayout.Label("StarsToFill is: " + completeStarsToFill);
-    }
     private void FillStars()
-    {
-        //TEST: Test without the function, it has an error on Android       
-        completeStarsToFill = GetFirstDigit(scoreCounter.starsToFillAmount);
+    {     
+        // Get the complete and partly stars to fill
+        int completeStarsToFill = GetFirstDigit(scoreCounter.starsToFillAmount);
         float partlyStarToFill = GetSecondDigit(scoreCounter.starsToFillAmount);
         
         //Fill CompleteStars
@@ -46,12 +38,11 @@ public class EndLevelMenuController : MonoBehaviour
                 scoringStars[i].fillAmount = 1f;
         }
 
-        //UNDONE: Activate as soon fixed the Bug of filling the Stars
-        ////Fill the partly Star
-        //if (partlyStarToFill > 0.1f)
-        //{
-        //    scoringStars[completeStarsToFill].fillAmount = partlyStarToFill;
-        //}
+        //Fill the partly Star
+        if (partlyStarToFill > 0.1f)
+        {
+            scoringStars[completeStarsToFill].fillAmount = partlyStarToFill;
+        }
 
     }
     /// <summary>

@@ -29,11 +29,6 @@ public class ScoreCounter : MonoBehaviour
 
         // Set Maxscore to the amount of spawned Animals
         maxScore = mySpawnedAnimals.Count;
-
-        //DELETE: Debuglog
-        Debug.Log("MaxScore is: "+maxScore.ToString());
-        Text maxScoreTxt = GameObject.Find("MaxScoreText").GetComponent<Text>();
-        maxScoreTxt.text = "MaxScore is: " + maxScore.ToString();
     }
 
     private void AnimalOnClicked()
@@ -43,14 +38,8 @@ public class ScoreCounter : MonoBehaviour
 
     public void CountScore()
     {
-        currentScore++; //BUG: Currentscore is higher than MaxScore. Found Reason, Touch inputs ar counted twice.
+        currentScore++;
         starsToFillAmount = (100/maxScore * currentScore)/20;
-
-        //DELETE:
-        //Debug.Log("MaxScore is: " + maxScore.ToString());
-        Debug.Log("CurrentScore is: " + currentScore.ToString());
-        Text curScoreText = GameObject.Find("CurrentScoreText").GetComponent<Text>();
-        curScoreText.text = "CurrentScore is: " + currentScore.ToString();
 
         // Calculate percentage
         float percent = 0f;

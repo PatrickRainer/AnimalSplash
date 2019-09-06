@@ -14,7 +14,8 @@ public class InputController : MonoBehaviour
     private void Awake()
     {
         myGameOverlay = GameObject.Find("GameOverlay").GetComponent<GameOverlayController>();
-        Input.multiTouchEnabled = false; //TEST: 
+        //TEST: MultiTouch, does it change anything?
+        Input.multiTouchEnabled = false;
     }
 
     private void Update()
