@@ -14,11 +14,12 @@ public class InputController : MonoBehaviour
     private void Awake()
     {
         myGameOverlay = GameObject.Find("GameOverlay").GetComponent<GameOverlayController>();
+        Input.multiTouchEnabled = false; //TEST: 
     }
 
     private void Update()
     {
-        // Does Touch on the screen?
+        //// Does Touch on the screen?
         if (Input.touchCount > 0)
         {
             // Is the 1. Input beginning, the check the position
@@ -28,13 +29,14 @@ public class InputController : MonoBehaviour
             }
         }
 
+#if UNITY_EDITOR
         // Is no touch pressed, is the left Mouse Button pressed?
         if (Input.GetMouseButtonDown(0))
         {
             //Check the Mouse Position
             CheckInput(Input.mousePosition);
         }
-
+#endif
     }
 
     // Check Input Position
@@ -64,7 +66,7 @@ public class InputController : MonoBehaviour
                     animal.SendMessage("SetIsClicked", true, 
                         SendMessageOptions.DontRequireReceiver);
 
-                    //Animate the Star in the overlay HACK: At the moment I don't know how to do it by an event
+                    //Animate the Star in the overlay HACK: Should be down by an event in the GameOverlayController
                     myGameOverlay.AnimateStar();
                 }
             }                               

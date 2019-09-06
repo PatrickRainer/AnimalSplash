@@ -4,11 +4,17 @@ using System;
 
 public class EndLevelMenuController : MonoBehaviour
 {
+    // HACK:
+    int completeStarsToFill;
+
     public Image[] scoringStars;
     private EventManager myEventManager;
+    private ScoreCounter scoreCounter;
 
     private void Awake()
     {
+        // Assign Members
+        scoreCounter = GameObject.Find("LevelManager").GetComponent<ScoreCounter>();
         //Assign Event
         LevelController lc = GameObject.Find("LevelManager").GetComponent<LevelController>();
         myEventManager = GameObject.FindObjectOfType<EventManager>();
@@ -23,23 +29,29 @@ public class EndLevelMenuController : MonoBehaviour
     {
         scoringStars[starNumber].fillAmount = fillAmount;
     }
+    private void OnGUI()
+    {
+        //DELETE:
+        GUILayout.Label("StarsToFill is: " + completeStarsToFill);
+    }
     private void FillStars()
     {
-        ScoreCounter scoreCounter = GameObject.Find("LevelManager").GetComponent<ScoreCounter>();
-        int completeStarsToFill = GetFirstDigit(scoreCounter.starsToFillAmount);
+        //TEST: Test without the function, it has an error on Android       
+        completeStarsToFill = GetFirstDigit(scoreCounter.starsToFillAmount);
         float partlyStarToFill = GetSecondDigit(scoreCounter.starsToFillAmount);
-
+        
         //Fill CompleteStars
         for (int i = 0; i < completeStarsToFill; i++)
         {
-            scoringStars[i].fillAmount = 1;
+                scoringStars[i].fillAmount = 1f;
         }
 
-        //Fill the partly Star
-        if (partlyStarToFill>0.1f)
-        {
-            scoringStars[completeStarsToFill].fillAmount = partlyStarToFill;
-        }
+        //UNDONE: Activate as soon fixed the Bug of filling the Stars
+        ////Fill the partly Star
+        //if (partlyStarToFill > 0.1f)
+        //{
+        //    scoringStars[completeStarsToFill].fillAmount = partlyStarToFill;
+        //}
 
     }
     /// <summary>
