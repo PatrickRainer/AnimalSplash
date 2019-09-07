@@ -552,7 +552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalPrefab:
   - {fileID: 1262004999857709510, guid: 39b50172c2653ed42aa1b7b672612102, type: 3}
-  levelDuration: 50
+  levelDuration: 32
   spawningDelay: 1
 --- !u!4 &1821744014
 Transform:
