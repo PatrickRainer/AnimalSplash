@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level09Dog.unity
     guid: ef48d5beb1169684985d6b5fe6e8eddf
+  - enabled: 1
+    path: Assets/Scenes/Level10Horse.unity
+    guid: baebdaf42ab723643b45e449d6d90314
   m_configObjects: {}

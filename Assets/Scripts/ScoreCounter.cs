@@ -1,13 +1,15 @@
 ﻿using System.Collections.ObjectModel;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreCounter : MonoBehaviour
 {
-    private float maxScore=0;
-    private float currentScore=0;
+    private float maxScore=0f;
+    private float currentScore=0f;
     [HideInInspector]
     public float starsToFillAmount=0f;
     private Spawner spawner;
+    private ObservableCollection<GameObject> mySpawnedAnimals;
 
     private void Awake()
     {
@@ -17,11 +19,16 @@ public class ScoreCounter : MonoBehaviour
 
     private void SpawnedAnimals_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
     {
-        ObservableCollection<GameObject> mySpawnedAnimals = (ObservableCollection<GameObject>)sender;
+        // Write the last spawned Animal into a variable
+        mySpawnedAnimals = (ObservableCollection<GameObject>)sender;
         GameObject spawnedAnimal = mySpawnedAnimals[mySpawnedAnimals.Count - 1];
 
+        // Set the Eventhandler for the onclickEvent of the last spawned Animal
         AnimalBehaviour currentAnimal = spawnedAnimal.GetComponent<AnimalBehaviour>();
         currentAnimal.AnimalOnClicked += AnimalOnClicked;
+
+        // Set Maxscore to the amount of spawned Animals
+        maxScore = mySpawnedAnimals.Count;
     }
 
     private void AnimalOnClicked()
@@ -31,7 +38,6 @@ public class ScoreCounter : MonoBehaviour
 
     public void CountScore()
     {
-        maxScore = spawner.spawnedAnimals.Count;
         currentScore++;
         starsToFillAmount = (100/maxScore * currentScore)/20;
 

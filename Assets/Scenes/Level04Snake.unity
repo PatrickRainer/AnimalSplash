@@ -94,8 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
     m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -132,12 +132,12 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4319675644018834849, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
+    - target: {fileID: 4319675645491747661, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
         type: 3}
-      propertyPath: m_AnchorMax.y
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4319675645033614028, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
+    - target: {fileID: 4319675645491747661, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -155,6 +155,16 @@ PrefabInstance:
     - target: {fileID: 4319675645213154418, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319675644018834849, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4319675645033614028, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
+        type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4319675644583095002, guid: 84d8b5877737a25499fd19a9dcfbf8dd,
@@ -308,6 +318,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -541,7 +552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animalPrefab:
   - {fileID: 1741706509093273618, guid: 9c1b9f4a91b3b2f40945700222802ab5, type: 3}
-  levelDuration: 35
+  levelDuration: 26
   spawningDelay: 1
 --- !u!4 &1821744014
 Transform:

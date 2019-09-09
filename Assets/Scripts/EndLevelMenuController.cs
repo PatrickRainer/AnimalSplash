@@ -6,9 +6,12 @@ public class EndLevelMenuController : MonoBehaviour
 {
     public Image[] scoringStars;
     private EventManager myEventManager;
+    private ScoreCounter scoreCounter;
 
     private void Awake()
     {
+        // Assign Members
+        scoreCounter = GameObject.Find("LevelManager").GetComponent<ScoreCounter>();
         //Assign Event
         LevelController lc = GameObject.Find("LevelManager").GetComponent<LevelController>();
         myEventManager = GameObject.FindObjectOfType<EventManager>();
@@ -24,19 +27,19 @@ public class EndLevelMenuController : MonoBehaviour
         scoringStars[starNumber].fillAmount = fillAmount;
     }
     private void FillStars()
-    {
-        ScoreCounter scoreCounter = GameObject.Find("LevelManager").GetComponent<ScoreCounter>();
+    {     
+        // Get the complete and partly stars to fill
         int completeStarsToFill = GetFirstDigit(scoreCounter.starsToFillAmount);
         float partlyStarToFill = GetSecondDigit(scoreCounter.starsToFillAmount);
-
+        
         //Fill CompleteStars
         for (int i = 0; i < completeStarsToFill; i++)
         {
-            scoringStars[i].fillAmount = 1;
+                scoringStars[i].fillAmount = 1f;
         }
 
         //Fill the partly Star
-        if (partlyStarToFill>0.1f)
+        if (partlyStarToFill > 0.1f)
         {
             scoringStars[completeStarsToFill].fillAmount = partlyStarToFill;
         }
